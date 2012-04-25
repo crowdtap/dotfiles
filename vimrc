@@ -35,11 +35,9 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 
 set mouse=a
 
-
 "
 " NERDTree
 "
-
 nnoremap <C-g> :NERDTreeToggle<cr>
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 let NERDTreeHighlightCursorline=1
@@ -54,3 +52,9 @@ nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
+
+
+"
+" Powerline
+"
+let g:Powerline_symbols = 'unicode'
