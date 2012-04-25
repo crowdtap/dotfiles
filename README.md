@@ -1,4 +1,4 @@
 scratch-vim
 ===========
 
-vim config called from scratch
+vim config used in scratch
