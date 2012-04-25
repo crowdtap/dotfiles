@@ -21,9 +21,6 @@ endif
 set cursorline
 set number
 
-" NERDTree
-nnoremap <C-g> :NERDTreeToggle<cr>
-let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$' ]
-let NERDTreeHighlightCursorline=1
-let NERDTreeShowBookmarks=1
-let NERDTreeShowFiles=1
+let mapleader=','
+
+so vimrc-plugins
