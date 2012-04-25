@@ -16,3 +16,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/nercommenter"]
+	path = bundle/nercommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
