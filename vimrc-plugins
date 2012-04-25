@@ -1,4 +1,6 @@
+"
 " NERDTree
+"
 
 nnoremap <C-g> :NERDTreeToggle<cr>
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$' ]
@@ -7,8 +9,9 @@ let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 
 
+"
 " Tabular
-
+"
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
