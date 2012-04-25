@@ -19,3 +19,6 @@
 [submodule "bundle/nercommenter"]
 	path = bundle/nercommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
