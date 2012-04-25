@@ -23,4 +23,10 @@ set number
 
 let mapleader=','
 
+" search feature
+set ignorecase " ignore case
+set smartcase  " match case if a capital letter is present in the regexp
+set hlsearch   " highlight matched patterns
+set incsearch  " highlight search result as you type it
+
 so vimrc-plugins
