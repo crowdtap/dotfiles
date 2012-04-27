@@ -36,6 +36,8 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 set list!
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:« " whitespace and trailing spaces
 
+set directory=~/.vim/swap "sets the swap (.swp) file directory
+
 set mouse=a " allow mouse scrolling
 
 "
