@@ -24,6 +24,16 @@ set number
 let mapleader=','
 let localmapleader=','
 
+set autoindent smartindent      " turn on auto/smart indenting
+set smarttab                    " make <tab> and <backspace> smarter
+set tabstop=8                   " tabstops of 8
+set shiftwidth=8                " indents of 8
+set backspace=eol,start,indent  " allow backspacing over indent, eol, & start
+set undolevels=10000            " number of forgivable mistakes
+set updatecount=100             " write swap file to disk every 100 chars
+set complete=.,w,b,u,U,t,i,d    " do lots of scanning on tab completion
+set viminfo=%100,'100,/100,h,\"500,:100,n~/.vim/viminfo
+
 " search feature
 set ignorecase " ignore case
 set smartcase  " match case if a capital letter is present in the regexp
