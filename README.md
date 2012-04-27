@@ -13,6 +13,7 @@ plugins
 * [Tabular](https://github.com/godlygeek/tabular.git) - Alignment plugin (e.g. =>, |, :, ...)
 * [NerdCommenter](https://github.com/scrooloose/nerdcommenter.git) - Comment efficiently single or multiple lines
 * [QuickFixSigns](https://github.com/tomtom/quickfixsigns_vim.git) - Is responsible for these usefull +/- signs on the left side (live diff with git index)
+* [Syntastic](https://github.com/scrooloose/syntastic.git) - Syntax checker, yells when you write mistakes
 
 plugins - under the hood
 ========================
