@@ -66,6 +66,12 @@ let g:Powerline_symbols = 'unicode'
 
 
 "
+" Quickfixsigns
+"
+let g:quickfixsigns_classes=['qfl', 'vcsdiff', 'breakpoints']
+
+
+"
 " Syntastic
 "
 let g:syntastic_enable_signs=1  " enable syntastic signs to show up
