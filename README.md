@@ -12,6 +12,7 @@ plugins
 * [Fugitive](https://github.com/tpope/vim-fugitive)   - Deep git integration :octocat:
 * [Tabular](https://github.com/godlygeek/tabular.git) - Alignment plugin (e.g. =>, |, :, ...)
 * [NerdCommenter](https://github.com/scrooloose/nerdcommenter.git) - Comment efficiently single or multiple lines
+* [QuickFixSigns](https://github.com/tomtom/quickfixsigns_vim.git) - Is responsible for these usefull +/- signs on the left side (live diff with git index)
 
 plugins - under the hood
 ========================
