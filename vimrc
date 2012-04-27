@@ -22,12 +22,17 @@ set cursorline
 set number
 
 let mapleader=','
+let localmapleader=','
 
 " search feature
 set ignorecase " ignore case
 set smartcase  " match case if a capital letter is present in the regexp
 set hlsearch   " highlight matched patterns
+map <Leader>/ :nohlsearch<cr>
 set incsearch  " highlight search result as you type it
+
+" spell check
+map <Leader>ss :setlocal spell!<cr>
 
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
@@ -36,7 +41,7 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 set list!
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:« " whitespace and trailing spaces
 
-set directory=~/.vim/swap "sets the swap (.swp) file directory
+set directory=/tmp "sets the swap (.swp) file directory
 
 set mouse=a " allow mouse scrolling
 
