@@ -1,10 +1,16 @@
-scratch-vim
-===========
+# scratch-vim
 
-vim config used in scratch
+Dotfiles, with style
 
-plugins
-=======
+## Install
+1. clone this repository
+2. cd into the repository
+3. specify the dotfiles you want to use in the `MANIFEST` file (by default everything is installed)
+4. run `rake install`
+
+## Vim config
+
+### Plugins
 
 * [Molokai](https://github.com/nviennot/molokai)      - This color scheme makes it pretty and gives you kisses { :lipstick: => :kiss: }
 * [NERDTree](https://github.com/scrooloose/nerdtree)  - Filesystem explorer - use `^g` to toggle it - it is not a :christmas_tree: but it helps
@@ -16,7 +22,6 @@ plugins
 * [Syntastic](https://github.com/scrooloose/syntastic.git) - Syntax checker, yells when you write mistakes :horse:
 * [Endwise](https://github.com/tpope/vim-endwise.git) - Adds necessary end to functions and statements in ruby
 
-plugins - under the hood
-========================
+### plugins - under the hood
 
 * [Pathogen](https://github.com/tpope/vim-pathogen) - Runtime path management
