@@ -33,7 +33,10 @@ set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 
-set mouse=a
+set list!
+set listchars=tab:▸\ ,trail:•,extends:»,precedes:« " whitespace and trailing spaces
+
+set mouse=a " allow mouse scrolling
 
 "
 " NERDTree
@@ -48,6 +51,8 @@ let NERDTreeShowFiles=1
 "
 " Tabular
 "
+nmap <Leader>ah :Tabularize /=><CR>
+vmap <Leader>ah :Tabularize /=><CR>
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
@@ -58,3 +63,13 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 " Powerline
 "
 let g:Powerline_symbols = 'unicode'
+
+
+"
+" Syntastic
+"
+let g:syntastic_enable_signs=1  " enable syntastic signs to show up
+let g:syntastic_auto_loc_list=1 " automatically open error window
+let g:syntastic_mode_map = { 'mode': 'active',
+			   \ 'active_filetypes': [],
+			   \ 'passive_filetypes': ['c', 'scss'] }
