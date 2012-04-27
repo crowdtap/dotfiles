@@ -14,6 +14,7 @@ plugins
 * [NerdCommenter](https://github.com/scrooloose/nerdcommenter.git) - Comment efficiently single or multiple lines
 * [QuickFixSigns](https://github.com/tomtom/quickfixsigns_vim.git) - Is responsible for these usefull +/- signs on the left side (live diff with git index)
 * [Syntastic](https://github.com/scrooloose/syntastic.git) - Syntax checker, yells when you write mistakes
+* [Endwise](https://github.com/tpope/vim-endwise.git) - Adds necessary end to functions and statements in ruby
 
 plugins - under the hood
 ========================
