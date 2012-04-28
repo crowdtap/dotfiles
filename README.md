@@ -4,11 +4,6 @@ Dotfiles, with style
 
 ![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
 
-[alt=center] {
-    display: block;
-    margin: auto;
-}
-
 ## Install
 1. clone this repository
 2. cd into the repository
