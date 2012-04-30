@@ -1,4 +1,8 @@
+ackrc
 tmux.conf
 vim
 vimrc
 gvimrc
+gemrc
+irbrc
+irbrc.d
