@@ -31,7 +31,7 @@ end
 files = File.new(File.join(pwd, "MANIFEST"), "r").read.split("\n")
 
 desc "Install all dotfiles"
-task :install => [:init_submodules, :update_submodules] do
+task :install => [:init_submodules, :update] do
   files.each do |file|
     symlink(File.join(pwd, file), target_path(file))
   end
@@ -44,27 +44,13 @@ task :uninstall do
   end
 end
 
-desc "Install submodules"
 task :init_submodules do
   puts "Installing submodules"
   `git submodule init`
 end
 
-desc "Update submodules"
-task :update_submodules do
+desc "Update VIM plugins"
+task :update do
   puts "Updating submodules"
   `git submodule update`
-end
-
-desc "Pull in new vim submodules"
-task :pull_vim_submodules do
-  puts "Pull vim submodules"
-  system(%{
-    for x in vim/bundle/*; do
-      echo $x
-      cd $x
-      git co master && git pull
-      cd ../../..
-    done
-  })
 end
