@@ -1,6 +1,4 @@
-# scratch-vim
-
-Hamburger dotfile config
+# Crowdtap dotfile config, created from scratch
 
 ![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
 
@@ -34,3 +32,10 @@ See below for further details
 ### plugins - under the hood
 
 * [Pathogen](https://github.com/tpope/vim-pathogen) - Runtime path management
+
+## Credits
+
+I would like to thank these guys, this config was largely inspired by there work:
+
+- [Joshua Clayton](https://github.com/joshuaclayton/dotfiles)
+- [Nicolas Viennot](https://github.com/nviennot/vim-config)
