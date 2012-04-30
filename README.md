@@ -28,6 +28,7 @@ See below for further details
 * [QuickFixSigns](https://github.com/tomtom/quickfixsigns_vim.git) - Is responsible for these usefull +/- signs on the left side (live diff with git index)
 * [Syntastic](https://github.com/scrooloose/syntastic.git) - Syntax checker, yells when you write mistakes :horse:
 * [Endwise](https://github.com/tpope/vim-endwise.git) - Adds necessary end to functions and statements in ruby
+* [Vim-ruby](https://github.com/vim-ruby/vim-ruby.git) - syntax highlighting for ruby files
 
 ### plugins - under the hood
 
