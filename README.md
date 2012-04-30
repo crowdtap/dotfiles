@@ -13,7 +13,7 @@ See below for further details
 1. clone this repository
 2. cd into the repository
 3. specify the dotfiles you want to use in the `MANIFEST` file (by default everything is installed)
-4. run `rake install`
+4. run `make install`
 
 ## Vim config
 
