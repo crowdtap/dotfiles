@@ -1,8 +1,15 @@
 # scratch-vim
 
-Dotfiles, with style
+Hamburger dotfile config
 
 ![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
+
+## What's inside?
+* A solid VIM config
+* A solid TMUX config
+* Extra dotfiles (ackrc, irbrc, gemrc)
+
+See below for further details
 
 ## Install
 1. clone this repository
