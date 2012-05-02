@@ -56,6 +56,14 @@ set directory=/tmp "sets the swap (.swp) file directory
 set mouse=a " allow mouse scrolling
 
 "
+" Source external vim config files
+"
+if filereadable(expand("custom.vim"))
+  source custom.vim
+endif
+
+
+"
 " NERDTree
 "
 nnoremap <C-g> :NERDTreeToggle<cr>

@@ -1,5 +1,7 @@
 # Crowdtap dotfile config, created from scratch
 
+Hamburger! A clean and lean dotfile profile is here.
+
 ![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
 
 ## What's inside?
@@ -15,7 +17,12 @@ See below for further details
 3. specify the dotfiles you want to use in the `MANIFEST` file (by default everything is installed)
 4. run `rake install`
 
-## Vim config
+## TMUX config
+
+* The main mapping for TMUX is `ctrl + e`
+* Checkout the config (`tmux.conf` file) quickly to get an idea of the essential mappings, it is easy to understand
+
+## VIM config
 
 ### Plugins
 
@@ -33,6 +40,10 @@ See below for further details
 ### plugins - under the hood
 
 * [Pathogen](https://github.com/tpope/vim-pathogen) - Runtime path management
+
+## Customization
+
+Please put your custom setting in a `custom.vim` file at the root of the dotfile directory
 
 ## Credits
 
