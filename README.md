@@ -19,7 +19,7 @@ See below for further details
 
 ## TMUX config
 
-* The main mapping for TMUX is `ctrl + e`
+* The main mapping for TMUX is `ctrl + a`
 * Checkout the config (`tmux.conf` file) quickly to get an idea of the essential mappings, it is easy to understand
 
 ## VIM config
