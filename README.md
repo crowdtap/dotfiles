@@ -16,6 +16,8 @@ See below for further details
 2. cd into the repository
 3. specify the dotfiles you want to use in the `MANIFEST` file (by default everything is installed)
 4. run `make install`
+5. run `git submodule init`
+6. run `git submodule update`
 
 ## TMUX config
 
@@ -36,6 +38,7 @@ See below for further details
 * [Syntastic](https://github.com/scrooloose/syntastic.git) - Syntax checker, yells when you write mistakes :horse:
 * [Endwise](https://github.com/tpope/vim-endwise.git) - Adds necessary end to functions and statements in ruby
 * [Vim-ruby](https://github.com/vim-ruby/vim-ruby.git) - syntax highlighting for ruby files
+* [Vim-coffee-script](https://github.com/kchmck/vim-coffee-script.git) - syntax highlighting for coffee script files
 
 ### plugins - under the hood
 
