@@ -24,14 +24,19 @@ set number
 let mapleader=','
 let localmapleader=','
 
+set complete=.,w,b,u,U,t,i,d    " do lots of scanning on tab completion
+set wildmenu                    " show list instead of just completing
+set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
+
+set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 set autoindent smartindent      " turn on auto/smart indenting
 set smarttab                    " make <tab> and <backspace> smarter
-set tabstop=8                   " tabstops of 8
-set shiftwidth=8                " indents of 8
+set tabstop=2                   " tabstops of 2
+set softtabstop=2               " let backspace delete indent
+set shiftwidth=2                " indents of 2
 set backspace=eol,start,indent  " allow backspacing over indent, eol, & start
 set undolevels=10000            " number of forgivable mistakes
 set updatecount=100             " write swap file to disk every 100 chars
-set complete=.,w,b,u,U,t,i,d    " do lots of scanning on tab completion
 set viminfo=%100,'100,/100,h,\"500,:100,n~/.vim/viminfo
 
 " search feature
