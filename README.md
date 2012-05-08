@@ -15,9 +15,9 @@ See below for further details
 1. clone this repository
 2. cd into the repository
 3. specify the dotfiles you want to use in the `MANIFEST` file (by default everything is installed)
-4. run `make install`
-5. run `git submodule init`
-6. run `git submodule update`
+4. run `git submodule init`
+5. run `git submodule update`
+6. run `make install`
 
 ## TMUX config
 
@@ -50,7 +50,7 @@ Please put your custom setting in a `custom.vim` file at the root of the dotfile
 
 ## Credits
 
-I would like to thank these guys, this config was largely inspired by there work:
+I would like to thank these guys, this config was largely inspired by their work:
 
 - [Joshua Clayton](https://github.com/joshuaclayton/dotfiles)
 - [Nicolas Viennot](https://github.com/nviennot/vim-config)
