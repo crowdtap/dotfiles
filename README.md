@@ -1,6 +1,9 @@
-# Crowdtap dotfile config, created from scratch
+# Crowdtap dotfile config
 
-Hamburger! A clean and lean dotfile profile is here.
+## Why a common dotfile config?
+
+* To be on the same page
+* Unleash TMUX and VIM productivity power
 
 ![Hamburger](http://www.passportmagazine.com/blog/uploads/DeathbyHamburger.jpg)
 
