@@ -32,7 +32,7 @@ See below for further details
 ### Plugins
 
 * [Molokai](https://github.com/nviennot/molokai)      - This color scheme makes it pretty and gives you kisses { :lipstick: => :kiss: }
-* [NERDTree](https://github.com/scrooloose/nerdtree)  - Filesystem explorer - use `^g` to toggle it - it is not a :christmas_tree: but it helps
+* [NERDTree](https://github.com/scrooloose/nerdtree)  - Filesystem explorer - use `^g` to toggle it
 * [Rails.vim](https://github.com/tpope/vim-rails)     - Navigate Rails project easily
 * [Fugitive](https://github.com/tpope/vim-fugitive)   - Deep git integration :octocat:
 * [Tabular](https://github.com/godlygeek/tabular.git) - Alignment plugin (e.g. =>, |, :, ...)
@@ -50,6 +50,18 @@ See below for further details
 ## Customization
 
 Please put your custom setting in a `custom.vim` file at the root of the dotfile directory
+
+## Cheat sheet
+
+### Fugitive
+
+These are really good videos showcasing Fugitive functionalities
+
+* [#1 - A complement to command line git](http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/)
+* [#2 - Fugitive vim working with the git index](http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/)
+* [#3 - Resolving merge conflicts with vimdiff](http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/)
+* [#4 - Browsing the git object database](http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/)
+* [#5 - The history of a git repository](http://vimcasts.org/episodes/fugitive-vim-exploring-the-history-of-a-git-repository/)
 
 ## Credits
 
