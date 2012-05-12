@@ -109,3 +109,14 @@ let g:syntastic_auto_loc_list=1 " automatically open error window
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': [],
 			   \ 'passive_filetypes': ['c', 'scss'] }
+
+"
+" Minibuf Explorer
+"
+let g:miniBufExplorerMoreThanOne = 10000
+let g:miniBufExplModSelTarget = 1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplSplitBelow=1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplVSplit = 20
+map <Leader>l :MiniBufExplorer<cr>

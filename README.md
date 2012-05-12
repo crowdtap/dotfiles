@@ -42,6 +42,7 @@ See below for further details
 * [Endwise](https://github.com/tpope/vim-endwise.git) - Adds necessary end to functions and statements in ruby
 * [Vim-ruby](https://github.com/vim-ruby/vim-ruby.git) - syntax highlighting for ruby files
 * [Vim-coffee-script](https://github.com/kchmck/vim-coffee-script.git) - syntax highlighting for coffee script files
+* [MiniBufExplorer](https://github.com/fholgado/minibufexpl.vim.git) - interactive buffer list on demand bound on `<leader>l` (also binds ^h,^j,^k,^l to move around windows)
 
 ### plugins - under the hood
 
