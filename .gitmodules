@@ -43,3 +43,6 @@
 [submodule "vim/bundle/minibufexplorer"]
 	path = vim/bundle/minibufexplorer
 	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim/bundle/scss-syntax"]
+	path = vim/bundle/scss-syntax
+	url = https://github.com/cakebaker/scss-syntax.vim
