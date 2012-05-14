@@ -31,8 +31,7 @@ set wildmode=list:longest,full  " command <Tab> completion, list matches, then l
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 set autoindent smartindent      " turn on auto/smart indenting
 set smarttab                    " make <tab> and <backspace> smarter
-set tabstop=2                   " tabstops of 2
-set softtabstop=2               " let backspace delete indent
+set tabstop=2 shiftwidth=2 expandtab " tabstops of 2 & let backspace delete indent & tabs are spaces
 set shiftwidth=2                " indents of 2
 set backspace=eol,start,indent  " allow backspacing over indent, eol, & start
 set undolevels=10000            " number of forgivable mistakes
