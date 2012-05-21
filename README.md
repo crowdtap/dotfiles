@@ -33,7 +33,7 @@ See below for further details
 
 * [Molokai](https://github.com/nviennot/molokai)      - This color scheme makes it pretty and gives you kisses { :lipstick: => :kiss: }
 * [NERDTree](https://github.com/scrooloose/nerdtree)  - Filesystem explorer - use `^g` to toggle it
-* [Rails.vim](https://github.com/tpope/vim-rails)     - Navigate Rails project easily
+* [Rails.vim](https://github.com/tpope/vim-rails)     - Navigate Rails project easily - `:help rails-navigation`
 * [Fugitive](https://github.com/tpope/vim-fugitive)   - Deep git integration :octocat:
 * [Tabular](https://github.com/godlygeek/tabular.git) - Alignment plugin (e.g. =>, |, :, ...)
 * [NerdCommenter](https://github.com/scrooloose/nerdcommenter.git) - Comment efficiently single or multiple lines
