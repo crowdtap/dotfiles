@@ -49,9 +49,6 @@
 [submodule "vim/bundle/less"]
 	path = vim/bundle/less
 	url = https://github.com/groenewege/vim-less.git
-[submodule "vim/bundle/xmledit"]
-	path = vim/bundle/xmledit
-	url = https://github.com/sukima/xmledit.git
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
