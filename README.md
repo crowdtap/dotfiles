@@ -44,6 +44,9 @@ See below for further details
 * [Vim-coffee-script](https://github.com/kchmck/vim-coffee-script.git) - syntax highlighting for coffee script files
 * [MiniBufExplorer](https://github.com/fholgado/minibufexpl.vim.git) - interactive buffer list on demand bound on `<leader>l` (also binds ^h,^j,^k,^l to move around windows)
 * [Scss-syntax](https://github.com/cakebaker/scss-syntax.vim) - Adds SASS syntax highlighting
+* [Less-css](https://github.com/groenewege/vim-less.git) - colors for LESS CSS files
+* [Xmledit](https://github.com/sukima/xmledit.git) - Eases HTML navigation
+* [Supertab](https://github.com/tsaleh/vim-supertab.git) - Tab completion
 
 ### plugins - under the hood
 
