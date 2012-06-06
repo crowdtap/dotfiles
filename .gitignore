@@ -2,3 +2,4 @@
 .netrwhist
 *~
 custom.vim
+*.sw[nomp]
