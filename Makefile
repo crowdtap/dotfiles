@@ -9,12 +9,14 @@ $(HOME)/.%: %
 	@ln -sf $(CWD)/$< $@
 
 install: $(TARGETS)
+	git submodule update --init
 
 uninstall:
 	rm -f $(TARGETS)
 
 update:
-	git submodule init
-	git submodule update
+	git pull
+	git submodule sync
+	git submodule update --init
 
 .PHONY: install uninstall update
