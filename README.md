@@ -24,8 +24,38 @@ See below for further details
 
 ## TMUX config
 
-* The main mapping for TMUX is `ctrl + e`
-* Checkout the config (`tmux.conf` file) quickly to get an idea of the essential mappings, it is easy to understand
+Mac Users: You need to set `Option / Alt` keys as a meta key in your terminal application.
+
+- iTerm:  
+    Preferences > Profiles > Default > Left option key acts as `Meta + Esc`  
+    Preferences > Profiles > Default > Right option key acts as `Meta + Esc`  
+
+Key Bindings
+-------------
+
+`Alt + E` Prefix (you probably won't need it)  
+
+The following key bindings do not require you to send the prefix keystroke:
+
+`Alt + |` Split vertically  
+`Alt + -` Split horizontally
+
+`Alt + H` Go to the left pane  
+`Alt + J` Go to the bottom pane  
+`Alt + K` Go to the top pane  
+`Alt + L` Go to the right pane  
+
+`Alt + Arrow` Resize pane  
+
+`Alt + PageUp` Copy mode and page up  
+`Alt + U` Copy mode
+`Alt + I` Paste  
+
+`Alt + 8` Choose a session to attach  
+`Alt + 9` Cycle left through sessions  
+`Alt + 0` Cycle right through sessions  
+
+`Alt + D` Detach  
 
 ## VIM config
 
