@@ -76,6 +76,7 @@ The following key bindings do not require you to send the prefix keystroke:
 * [Scss-syntax](https://github.com/cakebaker/scss-syntax.vim) - Adds SASS syntax highlighting
 * [Less-css](https://github.com/groenewege/vim-less.git) - colors for LESS CSS files
 * [Supertab](https://github.com/tsaleh/vim-supertab.git) - Tab completion
+* [vim-cucumber-align-pipes](https://github.com/quentindecock/vim-cucumber-align-pipes.git) - Aligns pipes while you are actually typing them in cucumber features
 
 ### plugins - under the hood
 
