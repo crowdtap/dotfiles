@@ -10,6 +10,8 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+colorscheme molokai
+
 " For solarized
 " let g:solarized_termcolors=256
 " let g:solarized_contrast= \"high\"
