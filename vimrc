@@ -12,10 +12,17 @@ filetype plugin indent on
 
 colorscheme molokai
 
-if $TERM =~ '256color'
-  set t_Co=256
-elseif $TERM =~ '^xterm$'
-  set t_Co=256
+" For solarized
+" let g:solarized_termcolors=256
+" let g:solarized_contrast= 'high'
+" let g:solarized_visibility= 'high'
+" set background=dark
+" colorscheme solarized
+
+if $term =~ '256color'
+  set t_co=256
+elseif $term =~ '^xterm$'
+  set t_co=256
 endif
 
 set cursorline

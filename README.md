@@ -24,11 +24,11 @@ See below for further details
 
 ## TMUX config
 
-Mac Users: You need to set `Option / Alt` keys as a meta key in your terminal application.
+iTerm Users: You need to set `Option / Alt` keys as a meta key in your terminal application.
 
 - iTerm:  
-    Preferences > Profiles > Default > Left option key acts as `Meta + Esc`  
-    Preferences > Profiles > Default > Right option key acts as `Meta + Esc`  
+    Preferences > Profiles > Default > Keys > Left option key acts as `+ Esc`
+    Preferences > Profiles > Default > Keys > Right option key acts as `+ Esc`
 
 Key Bindings
 -------------
