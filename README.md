@@ -24,11 +24,11 @@ See below for further details
 
 ## TMUX config
 
-Mac Users: You need to set `Option / Alt` keys as a meta key in your terminal application.
+iTerm Users: You need to set `Option / Alt` keys as a meta key in your terminal application.
 
 - iTerm:  
-    Preferences > Profiles > Default > Left option key acts as `Meta + Esc`  
-    Preferences > Profiles > Default > Right option key acts as `Meta + Esc`  
+    Preferences > Profiles > Default > Keys > Left option key acts as `+ Esc`
+    Preferences > Profiles > Default > Keys > Right option key acts as `+ Esc`
 
 Key Bindings
 -------------
@@ -76,6 +76,8 @@ The following key bindings do not require you to send the prefix keystroke:
 * [Scss-syntax](https://github.com/cakebaker/scss-syntax.vim) - Adds SASS syntax highlighting
 * [Less-css](https://github.com/groenewege/vim-less.git) - colors for LESS CSS files
 * [Supertab](https://github.com/tsaleh/vim-supertab.git) - Tab completion
+* [vim-cucumber-align-pipes](https://github.com/quentindecock/vim-cucumber-align-pipes.git) - Aligns pipes while you are actually typing them in cucumber features
+* [screen plugin on Github](https://github.com/ervandew/screen) - [screen plugin on vim website](http://www.vim.org/scripts/script.php?script_id=2711) - Screen/Tmux integration
 
 ### plugins - under the hood
 

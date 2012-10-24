@@ -12,10 +12,17 @@ filetype plugin indent on
 
 colorscheme molokai
 
-if $TERM =~ '256color'
-  set t_Co=256
-elseif $TERM =~ '^xterm$'
-  set t_Co=256
+" For solarized
+" let g:solarized_termcolors=256
+" let g:solarized_contrast= 'high'
+" let g:solarized_visibility= 'high'
+" set background=dark
+" colorscheme solarized
+
+if $term =~ '256color'
+  set t_co=256
+elseif $term =~ '^xterm$'
+  set t_co=256
 endif
 
 set cursorline
@@ -120,3 +127,14 @@ let g:miniBufExplSplitBelow=1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplVSplit = 20
 map <Leader>l :MiniBufExplorer<cr>
+
+"
+" Tmux integration through screen plugin
+"
+let g:ScreenImpl = 'Tmux'
+command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
+map <F5> :ScreenShellVertical <CR>
+map <Leader>c :ScreenShellVertical bundle exec rails c<CR>
+map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
