@@ -68,12 +68,11 @@ set directory=/tmp "sets the swap (.swp) file directory
 set mouse=a " allow mouse scrolling
 
 "
-" Source external vim config files
+" Source custom vim from ~/.custom.vim
 "
-if filereadable(expand(".custom.vim"))
-  source .custom.vim
+if filereadable(expand("~/.custom.vim"))
+  source ~/.custom.vim
 endif
-
 
 "
 " NERDTree
