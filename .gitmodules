@@ -72,9 +72,9 @@
 	ignore = dirty
 [submodule "vim/bundle/cucumber-align-pipes"]
 	path = vim/bundle/cucumber-align-pipes
-	url = git@github.com:quentindecock/vim-cucumber-align-pipes.git
+	url = https://github.com/quentindecock/vim-cucumber-align-pipes.git
 	ignore = dirty
 [submodule "vim/bundle/screen"]
 	path = vim/bundle/screen
-	url = git://github.com/ervandew/screen.git
+	url = https://github.com/ervandew/screen.git
 	ignore = dirty
