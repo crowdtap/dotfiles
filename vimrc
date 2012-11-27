@@ -44,6 +44,7 @@ set expandtab                   " tabs are turned into spaces
 set backspace=eol,start,indent  " allow backspacing over indent, eol, & start
 set undolevels=10000            " number of forgivable mistakes
 set updatecount=100             " write swap file to disk every 100 chars
+set history=2000                " write swap file to disk every 100 chars
 set viminfo=%100,'100,/100,h,\"500,:100,n~/.vim/viminfo
 
 " search feature
