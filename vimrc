@@ -115,6 +115,7 @@ let g:syntastic_auto_loc_list=1 " automatically open error window
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': [],
 			   \ 'passive_filetypes': ['c', 'html', 'scss', 'cucumber', 'feature'] }
+map <Leader>t :SyntasticToggle<cr>
 
 "
 " Minibuf Explorer
@@ -137,3 +138,4 @@ map <Leader>c :ScreenShellVertical bundle exec rails c<CR>
 map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+nnoremap <silent> <Leader>f :CommandT<CR>
