@@ -67,6 +67,7 @@ set listchars=tab:▸\ ,trail:•,extends:»,precedes:« " whitespace and traili
 set directory=/tmp "sets the swap (.swp) file directory
 
 set mouse=a " allow mouse scrolling
+map <Leader>w :set invwrap<cr>
 
 "
 " Source custom vim from ~/.custom.vim
