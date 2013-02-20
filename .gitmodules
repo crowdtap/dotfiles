@@ -82,5 +82,5 @@
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "vim/bundle/ctrl-p"]
-	path = vim/bundle/command-t
+	path = vim/bundle/ctrl-p
 	url = git://github.com/kien/ctrlp.vim.git
