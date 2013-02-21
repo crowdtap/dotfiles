@@ -140,3 +140,9 @@ map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 nnoremap <silent> <Leader>f :CommandT<CR>
+
+"
+" ctrl+p
+"
+
+map <F6> :CtrlPClearAllCaches <CR>

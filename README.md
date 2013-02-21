@@ -78,6 +78,7 @@ The following key bindings do not require you to send the prefix keystroke:
 * [Supertab](https://github.com/tsaleh/vim-supertab.git) - Tab completion
 * [vim-cucumber-align-pipes](https://github.com/quentindecock/vim-cucumber-align-pipes.git) - Aligns pipes while you are actually typing them in cucumber features
 * [screen plugin on Github](https://github.com/ervandew/screen) - [screen plugin on vim website](http://www.vim.org/scripts/script.php?script_id=2711) - Screen/Tmux integration
+* [ctrl+p](https://github.com/kien/ctrlp.vim) - Fuzzy finder
 
 ### plugins - under the hood
 
@@ -88,6 +89,18 @@ The following key bindings do not require you to send the prefix keystroke:
 Please put your custom setting in a `.custom.vim` file at the root of the dotfile directory
 
 ## Cheat sheet
+
+### ctrl + p
+
+* Press `<F6>` to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
+* Press `<c-f>` and `<c-b>` to cycle between modes.
+* Press `<c-d>` to switch to filename only search instead of full path.
+* Press `<c-r>` to switch to regexp mode.
+* Use `<c-n>`, `<c-p>` to select the next/previous string in the prompt's history.
+* Use `<c-y>` to create a new file and its parent directories.
+* Use `<c-z>` to mark/unmark multiple files and `<c-o>` to open them.
+
+If you need more information, please use `:help ctrlp` within vim
 
 ### Fugitive
 
