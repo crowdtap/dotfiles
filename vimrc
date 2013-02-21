@@ -25,7 +25,7 @@ elseif $term =~ '^xterm$'
   set t_co=256
 endif
 
-set cursorline
+set nocursorline                " This fixes a lag issue with ruby syntax highlighting
 set number
 
 let mapleader=','
@@ -34,8 +34,7 @@ let localmapleader=','
 set complete=.,w,b,u,U,t,i,d    " do lots of scanning on tab completion
 set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
-
-set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
+set pastetoggle=<F7>            " pastetoggle (sane indentation on pastes)
 set autoindent smartindent      " turn on auto/smart indenting
 set smarttab                    " make <tab> and <backspace> smarter
 set tabstop=2                   " tabstops of 2
