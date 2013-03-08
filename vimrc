@@ -1,8 +1,5 @@
-" VIM-PATHOGEN
-
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+" let Vundle manage Vundle - required!
+Bundle 'gmarik/vundle'
 
 
 " COLORS
