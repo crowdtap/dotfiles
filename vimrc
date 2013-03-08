@@ -1,6 +1,33 @@
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 " let Vundle manage Vundle - required!
 Bundle 'gmarik/vundle'
 
+" Vim Plugins
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'ervandew/screen'
+Bundle 'ervandew/supertab'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'groenewege/vim-less'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'nviennot/molokai'
+Bundle 'quentindecock/vim-cucumber-align-pipes'
+Bundle 'rodjek/vim-puppet'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tomtom/quickfixsigns_vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'vim-ruby/vim-ruby'
 
 " COLORS
 
