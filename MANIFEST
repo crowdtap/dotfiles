@@ -1,1 +1,1 @@
-dotfiles := ackrc tmux.conf vim vimrc gvimrc gemrc gitconfig irbrc irbrc.d rdebugrc rvmrc osx
+dotfiles := ackrc tmux.conf vim vimrc gvimrc gemrc gitconfig irbrc irbrc.d rdebugrc rvmrc
