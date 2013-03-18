@@ -93,13 +93,6 @@ map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
 "
-" Source custom vim from ~/.custom.vim
-"
-if filereadable(expand("~/.custom.vim"))
-  source ~/.custom.vim
-endif
-
-"
 " NERDTree
 "
 nnoremap <C-g> :NERDTreeToggle<cr>
@@ -170,3 +163,10 @@ nnoremap <silent> <Leader>f :CommandT<CR>
 "
 
 map <F6> :CtrlPClearAllCaches <CR>
+
+"
+" Source custom vim from ~/.custom.vim
+"
+if filereadable(expand("~/.custom.vim"))
+  source ~/.custom.vim
+endif
