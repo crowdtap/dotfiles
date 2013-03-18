@@ -81,3 +81,6 @@
 [submodule "vim/bundle/ctrl-p"]
 	path = vim/bundle/ctrl-p
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "zprezto"]
+	path = zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
