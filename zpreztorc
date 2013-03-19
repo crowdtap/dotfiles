@@ -1,0 +1,79 @@
+#
+# Sets Prezto options.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Michael D'Auria <michaeld@crowdtap.com>
+#
+
+# Set case-sensitivity for completion, history lookup, etc.
+zstyle ':prezto:*:*' case-sensitive 'no'
+
+# Color output (auto set to 'no' on dumb terminals).
+zstyle ':prezto:*:*' color 'yes'
+
+# Set the Zsh modules to load (man zshmodules).
+# zstyle ':prezto:load' zmodule 'attr' 'stat'
+
+# Set the Zsh functions to load (man zshcontrib).
+# zstyle ':prezto:load' zfunction 'zargs' 'zmv'
+
+# Set the Prezto modules to load (browse modules).
+# The order matters.
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'editor' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'syntax-highlighting' \
+  'archive' \
+  'completion' \
+  'fasd' \
+  'git' \
+  'history-substring-search' \
+  'node' \
+  'osx' \
+  'prompt' \
+  'rails' \
+  'rsync' \
+  'ruby' \
+  'tmux'
+
+# To enable key bindings, add the following to zpreztorc, and replace 'map'
+# with 'emacs' or 'vi.
+zstyle ':prezto:module:editor' keymap 'emacs'
+
+# To enable the auto conversion of .... to ../.., add the following to
+# zpreztorc.
+zstyle ':prezto:module:editor' dot-expansion 'yes'
+
+# Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
+zstyle ':prezto:module:git:status:ignore' submodules 'all'
+
+# Set the prompt theme to load.
+# Setting it to 'random' loads a random theme.
+# Auto set to 'off' on dumb terminals.
+zstyle ':prezto:module:prompt' theme 'crowdtap'
+
+# Set syntax highlighters, default: all
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'cursor' \
+  'root'
+
+# Auto set the tab and window titles.
+zstyle ':prezto:module:terminal' auto-title 'yes'
+
+# Auto start a session when Zsh is launched, default: no
+# zstyle ':prezto:module:tmux' auto-start 'yes'
+
+# Your custom overrides
+# https://github.com/sorin-ionescu/prezto/tree/master/modules
+if [[ -s "${ZDOTDIR:-$HOME}/.zpreztorc-mine" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zpreztorc-mine"
+fi
