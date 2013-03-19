@@ -1,9 +1,34 @@
-" VIM-PATHOGEN
+" This needs to be off for Vundle, turned back on after
+filetype off
 
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
+" let Vundle manage Vundle - required!
+Bundle 'gmarik/vundle'
+
+" Vim Plugins
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'ervandew/screen'
+Bundle 'ervandew/supertab'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'groenewege/vim-less'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'nviennot/molokai'
+Bundle 'quentindecock/vim-cucumber-align-pipes'
+Bundle 'rodjek/vim-puppet'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tomtom/quickfixsigns_vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'vim-ruby/vim-ruby'
 
 " COLORS
 
@@ -67,13 +92,6 @@ set directory=/tmp "sets the swap (.swp) file directory
 set mouse=a " allow mouse scrolling
 map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
-
-"
-" Source custom vim from ~/.custom.vim
-"
-if filereadable(expand("~/.custom.vim"))
-  source ~/.custom.vim
-endif
 
 "
 " NERDTree
@@ -146,3 +164,10 @@ nnoremap <silent> <Leader>f :CommandT<CR>
 "
 
 map <F6> :CtrlPClearAllCaches <CR>
+
+"
+" Source custom vim from ~/.custom.vim
+"
+if filereadable(expand("~/.custom.vim"))
+  source ~/.custom.vim
+endif

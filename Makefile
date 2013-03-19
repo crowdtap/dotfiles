@@ -10,6 +10,7 @@ $(HOME)/.%: %
 
 install: $(TARGETS)
 	git submodule update --init
+	vim +BundleInstall +qall
 
 uninstall:
 	rm -f $(TARGETS)
@@ -18,5 +19,6 @@ update:
 	git pull
 	git submodule sync
 	git submodule update --init
+	vim +BundleInstall +qall
 
 .PHONY: install uninstall update

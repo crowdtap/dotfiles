@@ -82,7 +82,7 @@ The following key bindings do not require you to send the prefix keystroke:
 
 ### plugins - under the hood
 
-* [Pathogen](https://github.com/tpope/vim-pathogen) - Runtime path management
+* [Vundle](https://github.com/gmarik/vundle) - VIM plugin management
 
 ## Customization
 
