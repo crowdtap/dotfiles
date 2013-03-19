@@ -11,6 +11,7 @@ $(HOME)/.%: %
 install: $(TARGETS)
 	git submodule update --init --recursive
 	vim +BundleInstall +qall
+	bash osx
 
 uninstall:
 	rm -f $(TARGETS)
@@ -20,5 +21,6 @@ update:
 	git submodule sync
 	git submodule update --init --recursive
 	vim +BundleInstall +qall
+	bash osx
 
 .PHONY: install uninstall update
