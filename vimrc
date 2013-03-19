@@ -1,3 +1,4 @@
+" This needs to be off for Vundle, turned back on after
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
