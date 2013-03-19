@@ -40,7 +40,6 @@ zstyle ':prezto:load' pmodule \
   'rails' \
   'rsync' \
   'ruby' \
-  'spectrum' \
   'tmux'
 
 # To enable key bindings, add the following to zpreztorc, and replace 'map'
