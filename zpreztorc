@@ -56,7 +56,7 @@ zstyle ':prezto:module:git:status:ignore' submodules 'all'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'crowdtap'
 
 # Set syntax highlighters, default: all
 zstyle ':prezto:module:syntax-highlighting' highlighters \
@@ -71,12 +71,6 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Auto start a session when Zsh is launched, default: no
 # zstyle ':prezto:module:tmux' auto-start 'yes'
-
-# %v - Node.js version.
-zstyle ':prezto:module:node:info:version' format 'node:%v'
-
-# %v - ruby version.
-zstyle ':prezto:module:ruby:info:version' format 'ruby:%v'
 
 # Your custom overrides
 # https://github.com/sorin-ionescu/prezto/tree/master/modules

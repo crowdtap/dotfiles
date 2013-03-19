@@ -71,3 +71,8 @@ if [[ -d "$TMPDIR" ]]; then
   fi
 fi
 
+#
+# Add a local themes directory
+#
+fpath=($fpath ${ZDOTDIR:-$HOME}/.zsh-themes)
+
