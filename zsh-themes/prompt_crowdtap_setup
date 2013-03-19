@@ -72,9 +72,7 @@ function prompt_crowdtap_setup {
   zstyle ':prezto:module:ruby:info:version' format 'ruby:%v'
 
   zstyle ':prezto:module:editor:info:completing' format '%B${_prompt_crowdtap_colors[4]}...%f%b'
-  zstyle ':prezto:module:editor:info:keymap:primary' format ' %B${_prompt_crowdtap_colors[4]}❯${_prompt_crowdtap_colors[2]}❯${_prompt_crowdtap_colors[5]}❯%f%b'
   zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format ' ${_prompt_crowdtap_colors[4]}♺%f'
-  zstyle ':prezto:module:editor:info:keymap:alternate' format ' %B${_prompt_crowdtap_colors[5]}❮${_prompt_crowdtap_colors[2]}❮${_prompt_crowdtap_colors[4]}❮%f%b'
 
   zstyle ':prezto:module:git:info:action' format ':%%B${_prompt_crowdtap_colors[2]}%s%f%%b'
   zstyle ':prezto:module:git:info:added' format ' %%B${_prompt_crowdtap_colors[5]}✚%f%%b'
@@ -94,8 +92,8 @@ function prompt_crowdtap_setup {
     'rprompt' ' %A%B%S%a%d%m%r%U%u ${_prompt_crowdtap_colors[5]}git$(coalesce "%b" "%p" "%c")%s'
 
   # Define prompts.
-  PROMPT="${_prompt_crowdtap_colors[1]}%~%f${git_info:+${(e)git_info[prompt]}}%(!. %B${_prompt_crowdtap_colors[4]}#%f%b.)${editor_info[keymap]} "
-  RPROMPT='${editor_info[overwrite]}%(?:: ${_prompt_crowdtap_colors[4]}⏎%f)${VIM:+" %B${_prompt_crowdtap_colors[5]}V%f%b"}${git_info:+${(e)git_info[rprompt]}} ${_prompt_crowdtap_colors[2]}$ruby_info[version] $node_info[version]'
+  PROMPT="[%~]%(?.%B${_prompt_crowdtap_colors[5]}$%f%b.%B${_prompt_crowdtap_colors[4]}$%f%b) "
+  RPROMPT='${editor_info[overwrite]}${VIM:+" %B${_prompt_crowdtap_colors[5]}V%f%b"}${git_info:+${(e)git_info[rprompt]}} ${_prompt_crowdtap_colors[2]}$ruby_info[version] $node_info[version]'
   SPROMPT='zsh: correct ${_prompt_crowdtap_colors[4]}%R%f to ${_prompt_crowdtap_colors[5]}%r%f [nyae]? '
 }
 
