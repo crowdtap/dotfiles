@@ -1,0 +1,34 @@
+project_name: crowdtap-development
+project_root: ~/code
+tabs:
+  - shell:
+  - crowdtap:
+      layout: 7f81,272x62,0,0[272x46,0,0,45,272x15,0,47,44]
+      panes:
+        - cd ./crowdtap && vim .
+        - cd ./crowdtap && git pull origin master && bundle install && bundle exec foreman start
+  - crowdtap-sniper:
+      layout: even-horizontal
+      panes:
+        - cd ./crowdtap && git pull && bundle install && MEMBER_URL=http://crowdtap.local:9296 FIANCE_URL=http://localhost:3003 ACTION_MANAGEMENT_URL=http://crowdtap.local:9292 bundle exec foreman start
+        - cd ./sniper   && git pull && bundle install && bundle exec foreman start
+  - fiance:
+      layout: 7f81,272x62,0,0[272x46,0,0,45,272x15,0,47,44]
+      panes:
+        - cd ./fiance && vi .
+        - cd ./fiance && git pull origin master && bundle install && bundle exec foreman start
+  - paparazzi:
+      layout: 7f81,272x62,0,0[272x46,0,0,45,272x15,0,47,44]
+      panes:
+        - cd ./paparazzi && vi .
+        - cd ./paparazzi && git pull origin master && bundle && bundle exec foreman start
+  - member:
+      layout: 7f81,272x62,0,0[272x46,0,0,45,272x15,0,47,44]
+      panes:
+        - cd ./crowdtap.member && vi .
+        - cd ./crowdtap.member && git pull origin master && ./node_modules/.bin/coffee server.coffee
+  - action-management:
+      layout: 7f81,272x62,0,0[272x46,0,0,45,272x15,0,47,44]
+      panes:
+        - cd ./crowdtap.action-management && vi .
+        - cd ./crowdtap.action-management && git pull origin master && ./node_modules/.bin/coffee server.coffee
