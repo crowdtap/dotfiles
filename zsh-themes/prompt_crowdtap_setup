@@ -92,7 +92,7 @@ function prompt_crowdtap_setup {
     'rprompt' ' %A%B%S%a%d%m%r%U%u ${_prompt_crowdtap_colors[5]}git$(coalesce "%b" "%p" "%c")%s'
 
   # Define prompts.
-  PROMPT="[%~]%(?.%B${_prompt_crowdtap_colors[5]}$%f%b.%B${_prompt_crowdtap_colors[4]}$%f%b) "
+  PROMPT="[${SSH_TTY:+%n@%m }%~]%(?.%B${_prompt_crowdtap_colors[5]}$%f%b.%B${_prompt_crowdtap_colors[4]}$%f%b) "
   RPROMPT='${editor_info[overwrite]}${VIM:+" %B${_prompt_crowdtap_colors[5]}V%f%b"}${git_info:+${(e)git_info[rprompt]}} ${_prompt_crowdtap_colors[2]}$ruby_info[version] $node_info[version]'
   SPROMPT='zsh: correct ${_prompt_crowdtap_colors[4]}%R%f to ${_prompt_crowdtap_colors[5]}%r%f [nyae]? '
 }
