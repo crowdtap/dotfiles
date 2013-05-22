@@ -181,4 +181,3 @@ map <F6> :CtrlPClearAllCaches <CR>
 if filereadable(expand("~/.custom.vim"))
   source ~/.custom.vim
 endif
-
