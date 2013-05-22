@@ -137,8 +137,8 @@ function! SyntasticWarningToggle()
   endif
 endfunction
 "
-let g:syntastic_enable_signs=1   " enable syntastic signs to show up
-let g:syntastic_auto_loc_list=1  " automatically open error window
+let g:syntastic_enable_signs=1  " enable syntastic signs to show up
+let g:syntastic_auto_loc_list=1 " automatically open error window
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': [],
 			   \ 'passive_filetypes': ['c', 'html', 'scss', 'cucumber', 'feature'] }
