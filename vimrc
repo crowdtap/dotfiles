@@ -69,7 +69,6 @@ set undolevels=10000            " number of forgivable mistakes
 set updatecount=100             " write swap file to disk every 100 chars
 set history=2000                " write swap file to disk every 100 chars
 set viminfo=%100,'100,/100,h,\"500,:100,n~/.vim/viminfo
-set gfn=Monaco:h12
 
 " search feature
 set ignorecase " ignore case
@@ -138,7 +137,6 @@ function! SyntasticWarningToggle()
   endif
 endfunction
 "
-let g:syntastic_quiet_warnings=1 " hide warnings
 let g:syntastic_enable_signs=1   " enable syntastic signs to show up
 let g:syntastic_auto_loc_list=1  " automatically open error window
 let g:syntastic_mode_map = { 'mode': 'active',
