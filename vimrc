@@ -68,6 +68,21 @@ set mouse=a " allow mouse scrolling
 map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
+" https://github.com/crowdtap/fiance/blob/master/app/models/engagement.rb#L17-L22
+vmap <Leader>h :!open http://www.github.com/ <cr>
+" get visual selection lines
+" :echo line("'<")
+" :echo line(">'")
+"
+" get current project repos name
+" get current git branch
+" get current buffer name
+"
+" echo @% / relative path
+"
+" # contain the path of the alternate file
+" % contain the path of the current file
+
 "
 " Source custom vim from ~/.custom.vim
 "
@@ -84,17 +99,18 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 
-
 "
 " Tabular
 "
+
 nmap <Leader>ah :Tabularize /=><CR>
 vmap <Leader>ah :Tabularize /=><CR>
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
-
+nmap <Leader>a, :Tabularize /,\zs<CR>
+vmap <Leader>a, :Tabularize /,\zs<CR>
 
 "
 " Powerline
@@ -133,9 +149,13 @@ map <Leader>l :MiniBufExplorer<cr>
 " Tmux integration through screen plugin
 "
 let g:ScreenImpl = 'Tmux'
+let g:ScreenShellTmuxInitArgs = '-2'
+let g:ScreenShellInitialFocus = 'shell'
+let g:ScreenShellQuitOnVimExit = 0
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
 map <F5> :ScreenShellVertical <CR>
 map <Leader>c :ScreenShellVertical bundle exec rails c<CR>
+map <Leader>c :w<CR> :call ScreenShellSend("bundle exec rails c")<CR>
 map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
@@ -146,3 +166,8 @@ nnoremap <silent> <Leader>f :CommandT<CR>
 "
 
 map <F6> :CtrlPClearAllCaches <CR>
+
+"
+"remove extra whitespace
+"
+nnoremap <silent> <F7> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
