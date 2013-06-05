@@ -66,7 +66,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'cursor'
 
 # Auto set the tab and window titles.
-zstyle ':prezto:module:terminal' auto-title 'yes'
+#zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Auto start a session when Zsh is launched, default: no
 # zstyle ':prezto:module:tmux' auto-start 'yes'
