@@ -12,3 +12,6 @@ fi
 
 # Customize to your needs...
 
+if [[ -s "${ZDOTDIR:-$HOME}/.aliasrc" ]]; then
+  source "${ZDOTDIR:-$HOME}/.aliasrc"
+fi
