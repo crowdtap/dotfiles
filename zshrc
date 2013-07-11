@@ -17,4 +17,3 @@ if [[ -s "${ZDOTDIR:-$HOME}/.aliasrc" ]]; then
 fi
 
 # Customize to your needs...
-
