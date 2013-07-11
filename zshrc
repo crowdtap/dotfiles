@@ -10,8 +10,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+[[ -s ~/.tmuxinator/scripts/tmuxinator ]] && source ~/.tmuxinator/scripts/tmuxinator
 
-if [[ -s "${ZDOTDIR:-$HOME}/.aliasrc" ]]; then
-  source "${ZDOTDIR:-$HOME}/.aliasrc"
-fi
+# Personal customizations should be added to ~/.zpresto-mine
+
