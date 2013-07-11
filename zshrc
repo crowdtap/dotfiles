@@ -12,5 +12,9 @@ fi
 
 [[ -s ~/.tmuxinator/scripts/tmuxinator ]] && source ~/.tmuxinator/scripts/tmuxinator
 
-# Personal customizations should be added to ~/.zpresto-mine
+if [[ -s "${ZDOTDIR:-$HOME}/.aliasrc" ]]; then
+  source "${ZDOTDIR:-$HOME}/.aliasrc"
+fi
+
+# Customize to your needs...
 
