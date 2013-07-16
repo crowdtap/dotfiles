@@ -1,0 +1,103 @@
+#
+# An even simpler theme that displays relevant, contextual information.
+# With a lightning bolt flourish.
+# Modified from Crowdtap's flavor of the sorin & steeef theme.
+#
+# Authors:
+#   Sorin Ionescu <bolt.ionescu@gmail.com>
+#   steeef <steeef@gmail.com>
+#   Michael D'Auria <michaeld@crowdtap.com>
+#   Jico Baligod <jicob@crowdtap.com>
+#
+# Screenshot:
+# http://i.imgur.com/NRrshsC.png
+#
+
+# Load dependencies.
+pmodload 'helper'
+
+function prompt_bolt_precmd {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+
+  # Get Git repository information.
+  if (( $+functions[git-info] )); then
+    git-info
+  fi
+
+  # Get Ruby information.
+  if (( $+functions[ruby-info] )); then
+    ruby-info
+  fi
+
+  # Get Node information.
+  if (( $+functions[node-info] )); then
+    node-info
+  fi
+}
+
+function prompt_bolt_setup {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+  prompt_opts=(cr percent subst)
+
+  # Load required functions.
+  autoload -Uz add-zsh-hook
+
+  # Add hook for calling git-info before each command.
+  add-zsh-hook precmd prompt_bolt_precmd
+
+  # Use extended color pallete if available.
+  if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
+    _prompt_bolt_colors=(
+      "%F{51}"  # Turquoise
+      "%F{227}" # Yella
+      "%F{171}" # Purple
+      "%F{198}" # Hotpink
+      "%F{49}"  # Green
+      "%F{255}" # White
+      "%F{39}"  # Blue
+    )
+  else
+    _prompt_bolt_colors=(
+      "%F{cyan}"
+      "%F{yellow}"
+      "%F{magenta}"
+      "%F{red}"
+      "%F{green}"
+      "%F{white}"
+      "%F{blue}"
+    )
+  fi
+
+  zstyle ':prezto:module:node:info:version' format 'node:%v'
+  zstyle ':prezto:module:ruby:info:version' format '%v'
+
+  zstyle ':prezto:module:editor:info:completing'               format '%B${_prompt_bolt_colors[4]}...%f%b'
+  zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format ' ${_prompt_bolt_colors[4]}♺%f'
+
+  zstyle ':prezto:module:git:info:action'    format ':%%B${_prompt_bolt_colors[2]}%s%f%%b'
+  zstyle ':prezto:module:git:info:added'     format ' %%B${_prompt_bolt_colors[5]}✚%f%%b'
+  zstyle ':prezto:module:git:info:ahead'     format ' %%B${_prompt_bolt_colors[2]}⬆%f%%b'
+  zstyle ':prezto:module:git:info:behind'    format ' %%B${_prompt_bolt_colors[2]}⬇%f%%b'
+  zstyle ':prezto:module:git:info:branch'    format ':${_prompt_bolt_colors[5]}%b%f'
+  zstyle ':prezto:module:git:info:commit'    format ':${_prompt_bolt_colors[5]}%.7c%f'
+  zstyle ':prezto:module:git:info:deleted'   format ' %%B${_prompt_bolt_colors[4]}✖%f%%b'
+  zstyle ':prezto:module:git:info:modified'  format ' %%B${_prompt_bolt_colors[7]}✱%f%%b'
+  zstyle ':prezto:module:git:info:position'  format ':${_prompt_bolt_colors[4]}%p%f'
+  zstyle ':prezto:module:git:info:renamed'   format ' %%B${_prompt_bolt_colors[3]}➜%f%%b'
+  zstyle ':prezto:module:git:info:stashed'   format ' %%B${_prompt_bolt_colors[1]}✭%f%%b'
+  zstyle ':prezto:module:git:info:unmerged'  format ' %%B${_prompt_bolt_colors[2]}═%f%%b'
+  zstyle ':prezto:module:git:info:untracked' format ' %%B${_prompt_bolt_colors[6]}◼%f%%b'
+  zstyle ':prezto:module:git:info:keys'      format \
+    'prompt' '' \
+    'rprompt' ' %A%B%S%a%d%m%r%U%u ${_prompt_bolt_colors[5]}git$(coalesce "%b" "%p" "%c")%s'
+
+  # Define prompts.
+  PROMPT="${_prompt_bolt_colors[4]}${SSH_TTY:+%n@%m }%~ %f%(?.%B${_prompt_bolt_colors[2]}⚡%f%b.%B${_prompt_bolt_colors[2]}⚡%f%b) "
+  RPROMPT='${editor_info[overwrite]}${VIM:+" %B${_prompt_bolt_colors[5]}V%f%b"}${git_info:+${(e)git_info[rprompt]}} ${_prompt_bolt_colors[7]}$ruby_info[version] $node_info[version]'
+  SPROMPT='zsh: correct ${_prompt_bolt_colors[4]}%R%f to ${_prompt_bolt_colors[5]}%r%f [nyae]? '
+}
+
+prompt_bolt_setup "$@"
+
