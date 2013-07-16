@@ -1,14 +1,16 @@
 #
-# A simple theme that displays relevant, contextual information.
-# Modified from the sorin & steeef theme
+# An even simpler theme that displays relevant, contextual information.
+# With a lightning bolt flourish.
+# Modified from Crowdtap's flavor of the sorin & steeef theme.
 #
 # Authors:
 #   Sorin Ionescu <bolt.ionescu@gmail.com>
 #   steeef <steeef@gmail.com>
-#   Michael D'Auria <michaeld@bolt.com>
+#   Michael D'Auria <michaeld@crowdtap.com>
+#   Jico Baligod <jicob@crowdtap.com>
 #
-# Screenshots:
-#   http://i.imgur.com/nBEEZ.png
+# Screenshot:
+# http://i.imgur.com/NRrshsC.png
 #
 
 # Load dependencies.
@@ -49,9 +51,9 @@ function prompt_bolt_setup {
   if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
     _prompt_bolt_colors=(
       "%F{51}"  # Turquoise
-      "%F{227}" # Yeller
+      "%F{227}" # Yella
       "%F{171}" # Purple
-      "%F{207}" # Hotpink
+      "%F{198}" # Hotpink
       "%F{49}"  # Green
       "%F{255}" # White
       "%F{39}"  # Blue
