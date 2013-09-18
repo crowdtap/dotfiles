@@ -169,6 +169,8 @@ map <Leader>c :w<CR> :call ScreenShellSend("bundle exec rails c")<CR>
 map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+map <Leader>, :w<CR> :call ScreenShellSend("\e[A")<CR>
+
 nnoremap <silent> <Leader>f :CommandT<CR>
 
 "

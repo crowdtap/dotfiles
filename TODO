@@ -1,0 +1,3 @@
+migrate to the new dotfiles
+- install yankring
+- split up the project into vim / tmux / zsh configs / irb
