@@ -68,6 +68,16 @@ set mouse=a " allow mouse scrolling
 map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
+" Resize window splits
+" TODO Fix mousewheel
+nnoremap <Up>    3<C-w>-
+nnoremap <Down>  3<C-w>+
+nnoremap <Left>  3<C-w><
+nnoremap <Right> 3<C-w>>
+
+nnoremap _ :split<cr>
+nnoremap \| :vsplit<cr>
+
 " https://github.com/crowdtap/fiance/blob/master/app/models/engagement.rb#L17-L22
 vmap <Leader>h :!open http://www.github.com/ <cr>
 " get visual selection lines
