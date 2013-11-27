@@ -153,7 +153,7 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplSplitBelow=1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplVSplit = 20
-map <Leader>l :MiniBufExplorer<cr>
+map <Leader>l :MBEOpen<cr>
 
 "
 " Tmux integration through screen plugin
