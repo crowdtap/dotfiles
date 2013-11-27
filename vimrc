@@ -153,7 +153,7 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplSplitBelow=1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplVSplit = 20
-map <Leader>l :MBEOpen<cr>
+map <Leader>l :MBEToggle<cr>
 
 "
 " Tmux integration through screen plugin
@@ -172,6 +172,7 @@ nnoremap <silent> <Leader>f :CommandT<CR>
 "
 
 map <F6> :CtrlPClearAllCaches <CR>
+map <Leader>m :CtrlPMRU<cr>
 
 "
 " Source custom vim from ~/.custom.vim
