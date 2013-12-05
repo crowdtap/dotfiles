@@ -28,7 +28,8 @@ Bundle 'tomtom/quickfixsigns_vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
+Bundle 'sjl/gundo.vim'
+Bundle 'mileszs/ack.vim'
 
 
 """""""""""""""""""""""""
@@ -125,6 +126,11 @@ au CursorHold * checktime
 """""""""""""""""""""""""
 " Keybindings
 """""""""""""""""""""""""
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 let mapleader=","
 let localmapleader=","
 
