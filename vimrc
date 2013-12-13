@@ -90,6 +90,11 @@ set listchars=tab:▸\ ,trail:•,extends:»,precedes:« " whitespace and traili
 set directory=/tmp "sets the swap (.swp) file directory
 
 set mouse=a " allow mouse scrolling
+
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=10
 map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
