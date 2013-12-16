@@ -30,6 +30,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'sjl/gundo.vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/YankRing.vim'
 
 
 """""""""""""""""""""""""
@@ -37,7 +38,7 @@ Bundle 'mileszs/ack.vim'
 """""""""""""""""""""""""
 " Display options
 syntax on
-set cursorline
+set nocursorline
 set number
 set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
