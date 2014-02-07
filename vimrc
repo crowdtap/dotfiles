@@ -176,6 +176,13 @@ nnoremap <Right> 3<C-w>>
 nnoremap _ :split<cr>
 nnoremap \| :vsplit<cr>
 
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=10
+map <Leader>w :set invwrap<cr>
+map <Leader>p :set invpaste<cr>
+
 vmap s :!sort<CR>
 vmap u :!sort -u<CR>
 
