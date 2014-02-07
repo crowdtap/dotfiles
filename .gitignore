@@ -6,3 +6,4 @@ custom.vim
 .*DS_Store
 vim/bundle/*
 !vim/bundle/vundle
+vim/viminfo
