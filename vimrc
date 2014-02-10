@@ -291,3 +291,10 @@ if has("cscope")
   " Show msg when any other cscope db is added
   set cscopeverbose
 end
+
+"
+" Source custom vim from ~/.custom.vim
+"
+if filereadable(expand("~/.custom.vim"))
+  source ~/.custom.vim
+endif
