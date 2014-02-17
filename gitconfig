@@ -1,0 +1,44 @@
+[alias]
+lol = log --graph --decorate --pretty=oneline --abbrev-commit
+co = checkout
+br = branch
+ign = ls-files -o -i --exclude-standard
+dc = diff --cached
+df = diff
+st = status
+ci = commit
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>;%Creset' --abbrev-commit
+lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+ls = ls-files
+
+[branch]
+autosetuprebase = always
+
+[core]
+editor = vim
+
+[hub]
+protocol = https
+
+[push]
+default = simple
+
+[ui]
+color = auto
+
+[color "diff"]
+excludesfile = /opt/boxen/config/git/gitignore
+frag = magenta bold
+meta = yellow bold
+new = green bold
+old = red bold
+
+[color "branch"]
+current = yellow reverse
+local = yellow
+remote = green
+
+[color "status"]
+added = yellow
+changed = green
+untracked = cyan
