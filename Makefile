@@ -12,6 +12,7 @@ install: $(TARGETS)
 	git submodule update --init --recursive
 	vim +BundleInstall +qall
 	bash osx
+	touch ~/.custom.tmux
 
 uninstall:
 	rm -f $(TARGETS)
@@ -22,5 +23,6 @@ update:
 	git submodule update --init --recursive
 	vim +BundleInstall +qall
 	bash osx
+	touch ~/.custom.tmux
 
 .PHONY: install uninstall update
