@@ -5,5 +5,6 @@ custom.vim
 *.sw[nomp]
 .*DS_Store
 vim/bundle/*
-!vim/bundle/vundle
 vim/viminfo
+vim/yankring*
+zprezto/
