@@ -14,3 +14,8 @@ if [[ -s "/opt/rbenv" ]]; then
   export PATH=$RBENV_ROOT/bin:/opt/rbenv/bin/rbenv:$PATH
   eval "$(rbenv init -)"
 fi
+
+if [[ -s "/etc/chef/role" ]]; then
+  export RAILS_ENV=production
+  XDG_CONFIG_HOME=/tmp
+fi
