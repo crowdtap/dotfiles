@@ -32,6 +32,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'sjl/gundo.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/YankRing.vim'
+Bundle 'ervandew/screen'
 
 
 """""""""""""""""""""""""
