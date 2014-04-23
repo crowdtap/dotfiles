@@ -206,8 +206,9 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 
-nnoremap <silent> <Leader>gd :Gdiff<CR>
-nnoremap <silent> <Leader>gb :Gblame<CR>
+map <silent> <Leader>gd :Gdiff<CR>
+map <silent> <Leader>gb :Gblame<CR>
+map <silent> <Leader>gg :Gbrowse<CR>
 
 nnoremap <Leader>a :Ack 
 
