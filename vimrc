@@ -263,6 +263,8 @@ let g:ScreenShellQuitOnVimExit = 0
 
 map <C-\> :ScreenShellVertical<CR>
 
+map <Leader>g :Gbrowse<CR>
+
 """""""""""""""""""""""""
 " Ruby Stuff
 """""""""""""""""""""""""
