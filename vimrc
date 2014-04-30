@@ -32,7 +32,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'sjl/gundo.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/YankRing.vim'
-Bundle 'ervandew/screen'
+Bundle 'yaymukund/vim-rabl'
 
 
 """""""""""""""""""""""""
@@ -178,10 +178,6 @@ nnoremap <Right> 3<C-w>>
 nnoremap _ :split<cr>
 nnoremap \| :vsplit<cr>
 
-set foldmethod=syntax
-set foldnestmax=10
-set nofoldenable
-set foldlevel=10
 map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
@@ -210,8 +206,9 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 
-nnoremap <silent> <Leader>gd :Gdiff<CR>
-nnoremap <silent> <Leader>gb :Gblame<CR>
+map <silent> <Leader>gd :Gdiff<CR>
+map <silent> <Leader>gb :Gblame<CR>
+map <silent> <Leader>gg :Gbrowse<CR>
 
 nnoremap <Leader>a :Ack 
 
