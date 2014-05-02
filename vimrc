@@ -182,7 +182,6 @@ map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
 vmap s :!sort<CR>
-vmap u :!sort -u<CR>
 
 " Write file when you forget to use sudo
 cmap w!! w !sudo tee % >/dev/null
