@@ -29,11 +29,13 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-surround'
 Bundle 'sjl/gundo.vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'ervandew/screen'
-
 
 """""""""""""""""""""""""
 " Basic features
@@ -261,6 +263,10 @@ let g:ScreenShellInitialFocus = 'shell'
 let g:ScreenShellQuitOnVimExit = 0
 
 map <C-\> :ScreenShellVertical<CR>
+
+nmap ,gi :Gist
+let g:gist_post_private = 1
+let g:gist_open_browser_after_post = 1
 
 """""""""""""""""""""""""
 " Ruby Stuff
