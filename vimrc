@@ -35,7 +35,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/YankRing.vim'
-Bundle 'ervandew/screen'
+Bundle 'yaymukund/vim-rabl'
 
 """""""""""""""""""""""""
 " Basic features
