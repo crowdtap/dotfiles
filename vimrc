@@ -272,8 +272,8 @@ let g:gist_open_browser_after_post = 1
 " Ruby Stuff
 """""""""""""""""""""""""
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>r :w<CR> :call ScreenShellSend("bundle exec rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("bundle exec cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>w :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
 
