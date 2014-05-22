@@ -9,13 +9,11 @@ if [[ -s "/opt/boxen/env.sh" ]]; then
   source "/opt/boxen/env.sh"
 fi
 
-if [[ -s "/opt/rbenv" ]]; then
-  export RBENV_ROOT=/opt/rbenv
-  export PATH=$RBENV_ROOT/bin:/opt/rbenv/bin/rbenv:$PATH
-  eval "$(rbenv init -)"
-fi
-
-if [[ -s "/etc/chef/role" ]]; then
-  export RAILS_ENV=production
-  XDG_CONFIG_HOME=/tmp
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
 fi

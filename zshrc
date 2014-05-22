@@ -19,4 +19,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.aliasrc" ]]; then
   source "${ZDOTDIR:-$HOME}/.aliasrc"
 fi
 
+bindkey -M vicmd '/' history-incremental-pattern-search-backward
+bindkey -M vicmd '?' history-incremental-pattern-search-forward
+bindkey -M viins '^R' history-incremental-pattern-search-backward
+bindkey -M viins '^F' history-incremental-pattern-search-forward
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zshrc-mine" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshrc-mine"
+fi
 # Customize to your needs...

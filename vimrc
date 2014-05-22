@@ -29,11 +29,13 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-surround'
 Bundle 'sjl/gundo.vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
-
 
 """""""""""""""""""""""""
 " Basic features
@@ -178,10 +180,6 @@ nnoremap <Right> 3<C-w>>
 nnoremap _ :split<cr>
 nnoremap \| :vsplit<cr>
 
-set foldmethod=syntax
-set foldnestmax=10
-set nofoldenable
-set foldlevel=10
 map <Leader>w :set invwrap<cr>
 map <Leader>p :set invpaste<cr>
 
@@ -210,8 +208,9 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 
-nnoremap <silent> <Leader>gd :Gdiff<CR>
-nnoremap <silent> <Leader>gb :Gblame<CR>
+map <silent> <Leader>gd :Gdiff<CR>
+map <silent> <Leader>gb :Gblame<CR>
+map <silent> <Leader>gg :Gbrowse<CR>
 
 nnoremap <Leader>a :Ack 
 
@@ -265,12 +264,16 @@ let g:ScreenShellQuitOnVimExit = 0
 
 map <C-\> :ScreenShellVertical<CR>
 
+nmap ,gi :Gist
+let g:gist_post_private = 1
+let g:gist_open_browser_after_post = 1
+
 """""""""""""""""""""""""
 " Ruby Stuff
 """""""""""""""""""""""""
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>r :w<CR> :call ScreenShellSend("bundle exec rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("bundle exec cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>w :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
 
