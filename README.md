@@ -39,7 +39,11 @@ The following key bindings do not require you to send the prefix keystroke:
 | -------------                 | -------------                       |
 | **Initiation**                |                                     |
 | "tmux"                        | Starts tmux                         |
+| "tmux attach"                 | Re-attach to last open session      |
+| "tmux attach -t session_name" | Attach to specific session          |
+| **Termination**               |                                     |
 | "exit"                        | Exits tmux                          |
+| Alt + d                       | Detach                              |
 | **New Pane**                  |                                     |
 | Alt + -                       | Split vertically                    |
 | Alt + pipe                    | Split horizontally                  |
@@ -65,10 +69,6 @@ The following key bindings do not require you to send the prefix keystroke:
 | Alt + 9                       | Cycle left through sessions         |
 | Alt + 0                       | Cycle right through sessions        |
 | "tmux ls"                     | List tmux sessions                  |
-| **Session Attachment**        |                                     |
-| Alt + d                       | Detach                              |
-| "tmux attach"                 | Re-attach to last open session      |
-| "tmux attach -t session_name" | Attach to specific session          |
 | **Prefix**                    |                                     |
 | Alt + e                       | Prefix (you probably won't need it) |
 
