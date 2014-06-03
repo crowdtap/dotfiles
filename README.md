@@ -33,8 +33,6 @@ iTerm Users: You need to set `Option / Alt` keys as a meta key in your terminal 
 Key Bindings
 -------------
 
-Colons can be used to align columns.
-
 The following key bindings do not require you to send the prefix keystroke:
 
 | Command                      | Result                              |
