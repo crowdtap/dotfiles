@@ -44,9 +44,9 @@ The following key bindings do not require you to send the prefix keystroke:
 | **Termination**               |                                     |
 | "exit"                        | Exits tmux                          |
 | Alt + d                       | Detach                              |
-| **New Pane**                  |                                     |
-| Alt + -                       | Split vertically                    |
-| Alt + pipe                    | Split horizontally                  |
+| **Panes**                     |                                     |
+| Alt + -                       | New split vertically                |
+| Alt + pipe                    | New split horizontally              |
 | **Pane Movement**             |                                     |
 | Alt + h                       | Go to the left pane                 |
 | Alt + j                       | Go to the bottom pane               |
@@ -54,6 +54,10 @@ The following key bindings do not require you to send the prefix keystroke:
 | Alt + l                       | Go to the right pane                |
 | **Pane Resizing**             |                                     |
 | Alt + Arrow                   | Resize pane                         |
+| **Tabs**                      |                                     |
+| Alt + c                       | New tab                             |
+| Alt + n                       | Next tab                            |
+| Alt + p                       | Previous tab                        |
 | **Copy mode**                 |                                     |
 | Alt + PageUp                  | Copy mode and page up               |
 | Alt + u                       | Copy mode                           |
@@ -62,9 +66,6 @@ The following key bindings do not require you to send the prefix keystroke:
 | Alt + i                       | Paste                               |
 | q                             | Quit copy mode                      |
 | **Sessions**                  |                                     |
-| Alt + c                       | New session                         |
-| Alt + n                       | Next session                        |
-| Alt + p                       | Previous session                    |
 | Alt + 8                       | Choose a session to attach          |
 | Alt + 9                       | Cycle left through sessions         |
 | Alt + 0                       | Cycle right through sessions        |
