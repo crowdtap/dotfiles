@@ -48,7 +48,7 @@ The following key bindings do not require you to send the prefix keystroke:
 | Alt + d                     | Detach                                   |
 | **Panes**                   |                                          |
 | Alt + -                     | New split vertically                     |
-| Alt + pipe                  | New split horizontally                   |
+| Alt + &#124;                | New split horizontally                   |
 | **Pane Movement**           |                                          |
 | Alt + h                     | Go to the left pane                      |
 | Alt + j                     | Go to the bottom pane                    |
