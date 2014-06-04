@@ -33,29 +33,44 @@ iTerm Users: You need to set `Option / Alt` keys as a meta key in your terminal 
 Key Bindings
 -------------
 
-`Alt + E` Prefix (you probably won't need it)
-
 The following key bindings do not require you to send the prefix keystroke:
 
-`Alt + |` Split vertically
-`Alt + -` Split horizontally
-
-`Alt + H` Go to the left pane
-`Alt + J` Go to the bottom pane
-`Alt + K` Go to the top pane
-`Alt + L` Go to the right pane
-
-`Alt + Arrow` Resize pane
-
-`Alt + PageUp` Copy mode and page up
-`Alt + U` Copy mode
-`Alt + I` Paste
-
-`Alt + 8` Choose a session to attach
-`Alt + 9` Cycle left through sessions
-`Alt + 0` Cycle right through sessions
-
-`Alt + D` Detach
+| Command                     | Result                                   |
+| -------------               | -------------                            |
+| **Prefix**                  |                                          |
+| Ctrl + e                    | Remapped to the Alt button in our config |
+| **Initiation**              |                                          |
+| tmux                        | Starts tmux                              |
+| tmux attach                 | Re-attach to last open session           |
+| tmux attach -t session_name | Attach to specific session               |
+| **Termination**             |                                          |
+| exit                        | Kill the current shell                   |
+| Alt + d                     | Detach                                   |
+| **Panes**                   |                                          |
+| Alt + -                     | New split vertically                     |
+| Alt + &#124;                | New split horizontally                   |
+| **Pane Movement**           |                                          |
+| Alt + h                     | Go to the left pane                      |
+| Alt + j                     | Go to the bottom pane                    |
+| Alt + k                     | Go to the top pane                       |
+| Alt + l                     | Go to the right pane                     |
+| Alt + Arrow                 | Resize pane                              |
+| **Tabs**                    |                                          |
+| Alt + c                     | New tab                                  |
+| Alt + n                     | Next tab                                 |
+| Alt + p                     | Previous tab                             |
+| **Sessions**                |                                          |
+| Alt + 8                     | Choose a session to attach               |
+| Alt + 9                     | Cycle left through sessions              |
+| Alt + 0                     | Cycle right through sessions             |
+| tmux ls                     | List tmux sessions                       |
+| **Copy mode**               |                                          |
+| Alt + PageUp                | Copy mode and page up                    |
+| Alt + u                     | Copy mode                                |
+| Space                       | Select text                              |
+| Return                      | Copy text and quit                       |
+| Alt + i                     | Paste                                    |
+| q                           | Quit copy mode                           |
 
 ## VIM config
 
