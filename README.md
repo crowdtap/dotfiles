@@ -35,43 +35,42 @@ Key Bindings
 
 The following key bindings do not require you to send the prefix keystroke:
 
-| Command                       | Result                              |
-| -------------                 | -------------                       |
-| **Initiation**                |                                     |
-| "tmux"                        | Starts tmux                         |
-| "tmux attach"                 | Re-attach to last open session      |
-| "tmux attach -t session_name" | Attach to specific session          |
-| **Termination**               |                                     |
-| "exit"                        | Exits tmux                          |
-| Alt + d                       | Detach                              |
-| **Panes**                     |                                     |
-| Alt + -                       | New split vertically                |
-| Alt + pipe                    | New split horizontally              |
-| **Pane Movement**             |                                     |
-| Alt + h                       | Go to the left pane                 |
-| Alt + j                       | Go to the bottom pane               |
-| Alt + k                       | Go to the top pane                  |
-| Alt + l                       | Go to the right pane                |
-| **Pane Resizing**             |                                     |
-| Alt + Arrow                   | Resize pane                         |
-| **Tabs**                      |                                     |
-| Alt + c                       | New tab                             |
-| Alt + n                       | Next tab                            |
-| Alt + p                       | Previous tab                        |
-| **Copy mode**                 |                                     |
-| Alt + PageUp                  | Copy mode and page up               |
-| Alt + u                       | Copy mode                           |
-| Alt + Space                   | Select text                         |
-| Alt + Return                  | Copy text                           |
-| Alt + i                       | Paste                               |
-| q                             | Quit copy mode                      |
-| **Sessions**                  |                                     |
-| Alt + 8                       | Choose a session to attach          |
-| Alt + 9                       | Cycle left through sessions         |
-| Alt + 0                       | Cycle right through sessions        |
-| "tmux ls"                     | List tmux sessions                  |
-| **Prefix**                    |                                     |
-| Alt + e                       | Prefix (you probably won't need it) |
+| Command                     | Result                                   |
+| -------------               | -------------                            |
+| **Prefix**                  |                                          |
+| Ctrl + e                    | Remapped to the Alt button in our config |
+| **Initiation**              |                                          |
+| tmux                        | Starts tmux                              |
+| tmux attach                 | Re-attach to last open session           |
+| tmux attach -t session_name | Attach to specific session               |
+| **Termination**             |                                          |
+| exit                        | Kill the current shell                   |
+| Alt + d                     | Detach                                   |
+| **Panes**                   |                                          |
+| Alt + -                     | New split vertically                     |
+| Alt + pipe                  | New split horizontally                   |
+| **Pane Movement**           |                                          |
+| Alt + h                     | Go to the left pane                      |
+| Alt + j                     | Go to the bottom pane                    |
+| Alt + k                     | Go to the top pane                       |
+| Alt + l                     | Go to the right pane                     |
+| Alt + Arrow                 | Resize pane                              |
+| **Tabs**                    |                                          |
+| Alt + c                     | New tab                                  |
+| Alt + n                     | Next tab                                 |
+| Alt + p                     | Previous tab                             |
+| **Sessions**                |                                          |
+| Alt + 8                     | Choose a session to attach               |
+| Alt + 9                     | Cycle left through sessions              |
+| Alt + 0                     | Cycle right through sessions             |
+| tmux ls                     | List tmux sessions                       |
+| **Copy mode**               |                                          |
+| Alt + PageUp                | Copy mode and page up                    |
+| Alt + u                     | Copy mode                                |
+| Space                       | Select text                              |
+| Return                      | Copy text and quit                       |
+| Alt + i                     | Paste                                    |
+| q                           | Quit copy mode                           |
 
 ## VIM config
 
