@@ -36,6 +36,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'yaymukund/vim-rabl'
+Bundle 'jelera/vim-javascript-syntax'
 
 """""""""""""""""""""""""
 " Basic features
