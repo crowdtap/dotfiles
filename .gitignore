@@ -8,3 +8,4 @@ vim/bundle/*
 vim/viminfo
 vim/yankring*
 zprezto/
+irb/
