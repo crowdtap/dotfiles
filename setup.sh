@@ -2,7 +2,7 @@
 # Installs our dotfiles
 #
 
-declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irbrc irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc)
+declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc)
 
 if [ ! -d 'zprezto' ]; then
   echo "Installing zprezto..."
@@ -36,6 +36,17 @@ else
     cd - > /dev/null
   done
 fi
+
+if [ ! -d 'irb' ]; then
+  echo "Installing irb-config..."
+  git clone -q https://github.com/crowdtap/irb-config.git irb
+else
+  echo "Updating irb-config..."
+fi
+cd irb
+make install OVERWRITE=1 RUBY=rbenv
+git pull -q
+cd - > /dev/null
 
 echo "OSX Customizations..."
 bash osx
