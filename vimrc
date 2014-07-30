@@ -309,3 +309,6 @@ end
 if filereadable(expand("~/.custom.vim"))
   source ~/.custom.vim
 endif
+
+" RABL syntax highlighting
+au BufRead,BufNewFile *.rabl setf ruby
