@@ -6,7 +6,7 @@ declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc
 
 if [ ! -d 'zprezto' ]; then
   echo "Installing zprezto..."
-  git clone -q --recursive https://github.com/sorin-ionescu/prezto.git zprezto
+  git clone -q --depth 1 --recursive https://github.com/sorin-ionescu/prezto.git zprezto
 else
   echo "Updating zprezto..."
   cd zprezto
@@ -23,7 +23,7 @@ if [ ! -d 'vim/bundle/vundle' ]; then
     echo "  $plugin"
     # dest is the second half of the plugin name
     dest=`sed -E "s/.+\/(.+)/\1/g" <<< $plugin`
-    git clone -q https://github.com/$plugin vim/bundle/$dest
+    git clone -q --depth 1 https://github.com/$plugin vim/bundle/$dest
   done
 else
   echo "Updating VIM plugins..."
