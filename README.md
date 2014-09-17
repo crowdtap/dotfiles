@@ -17,10 +17,7 @@ See below for further details
 ## Install
 1. clone this repository
 2. cd into the repository
-3. specify the dotfiles you want to use in the `MANIFEST` file (by default everything is installed)
-4. run `git submodule init`
-5. run `git submodule update`
-6. run `make install`
+3. `./setup.sh`
 
 ## TMUX config
 
