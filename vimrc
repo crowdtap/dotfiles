@@ -18,11 +18,13 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'kana/vim-textobj-user'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'nviennot/molokai'
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
@@ -34,6 +36,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
 Bundle 'tomtom/quickfixsigns_vim'
+Bundle 'tmhedberg/matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
@@ -312,3 +315,6 @@ endif
 
 " RABL syntax highlighting
 au BufRead,BufNewFile *.rabl setf ruby
+
+"Matchit macro for ruby block text objects
+runtime macros/matchit.vim
