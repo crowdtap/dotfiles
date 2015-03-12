@@ -3,7 +3,7 @@
     "app_name": null,
     "app_stack": null,
     "instance_size": null,
-    "base_ami": "ami-7a236812"
+    "base_ami": "ami-e0123488"
   },
   "builders": [
     {
