@@ -3,7 +3,8 @@
     "app_name": null,
     "app_stack": null,
     "instance_size": null,
-    "base_ami": "ami-e0123488"
+    "base_ami": "ami-e0123488",
+    "deploy_branch": ""
   },
   "builders": [
     {
@@ -36,7 +37,7 @@
     },
     {
       "type": "shell",
-      "inline": ["BLOCKING=1 /usr/local/bin/deploy {{user `app_name`}}",
+      "inline": ["BLOCKING=1 /usr/local/bin/deploy {{user `app_name`}} {{user `deploy_branch`}}",
                  "echo 'Waiting for logs to be created...'",
                  "sleep 5"]
     }
