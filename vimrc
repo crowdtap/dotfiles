@@ -318,3 +318,15 @@ au BufRead,BufNewFile *.rabl setf ruby
 
 "Matchit macro for ruby block text objects
 runtime macros/matchit.vim
+
+" toggle syntastic error panel
+function! ToggleErrorPanel()
+  let old_window_count = winnr('$')
+  lclose
+  if old_window_count == winnr('$')
+    " Nothing was closed, open syntastic error location panel
+    Errors
+  endif
+endfunction
+
+nnoremap <leader>er :call ToggleErrorPanel()<CR>
