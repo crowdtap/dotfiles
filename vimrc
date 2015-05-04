@@ -265,26 +265,9 @@ noremap \& :Tabularize /\(&\\|\\\\\)<CR>
 
 nnoremap <Leader>t :TagbarOpen fjc<CR>
 
-" Screen settings
-let g:ScreenImpl = 'Tmux'
-let g:ScreenShellTmuxInitArgs = '-2'
-let g:ScreenShellInitialFocus = 'shell'
-let g:ScreenShellQuitOnVimExit = 0
-
-map <C-\> :ScreenShellVertical<CR>
-
-nmap ,gi :Gist
+nmap <leader>gi :Gist
 let g:gist_post_private = 1
 let g:gist_open_browser_after_post = 1
-
-"""""""""""""""""""""""""
-" Ruby Stuff
-"""""""""""""""""""""""""
-command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>r :w<CR> :call ScreenShellSend("bundle exec rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("bundle exec cucumber --format=pretty ".@% . ':' . line('.'))<CR>
-map <Leader>w :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
-map <Leader>m :w<CR> :call ScreenShellSend("\e[A")<CR>
 
 """""""""""""""""""""""""
 " Cscope
