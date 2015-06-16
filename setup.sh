@@ -50,8 +50,8 @@ else
 fi
 cd - > /dev/null
 
-echo "OSX Customizations..."
-bash osx
+# echo "OSX Customizations..."
+# bash osx
 
 touch ~/.custom.tmux
 

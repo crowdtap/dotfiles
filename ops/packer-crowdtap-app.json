@@ -3,7 +3,7 @@
     "app_name": null,
     "app_stack": null,
     "instance_size": null,
-    "base_ami": "ami-962918fe",
+    "base_ami": "ami-ec081184",
     "deploy_branch": ""
   },
   "builders": [
@@ -21,8 +21,9 @@
       ],
       "region": "us-east-1",
       "vpc_id": "vpc-87cb79ec",
-      "subnet_id": "subnet-e90c41c1",
+      "subnet_id": "subnet-ec0c41c4",
       "iam_instance_profile": "production",
+      "associate_public_ip_address": "true",
 
       "ami_name": "{{user `app_name`}}-{{user `app_stack`}}-{{isotime | clean_ami_name }}"
     }
