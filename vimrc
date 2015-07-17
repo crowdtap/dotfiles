@@ -7,46 +7,60 @@ call vundle#rc()
 " let Vundle manage Vundle - required!
 Bundle 'gmarik/vundle'
 
+"""""""""""""""""""""""""
 " Vim Plugins
-Bundle 'AndrewRadev/vim-eco'
-Bundle 'Lokaltog/vim-powerline'
+"""""""""""""""""""""""""
+
+" appearence
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'morhetz/gruvbox'
-Bundle 'burnettk/vim-angular'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'ervandew/supertab'
-Bundle 'fatih/vim-go'
-Bundle 'fholgado/minibufexpl.vim'
+Bundle 'nviennot/molokai'
+
+" editing
 Bundle 'godlygeek/tabular'
-Bundle 'groenewege/vim-less'
-Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kana/vim-textobj-user'
-Bundle 'kchmck/vim-coffee-script'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'sjl/gundo.vim'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'tmhedberg/matchit'
+
+" navigation
 Bundle 'kien/ctrlp.vim'
+Bundle 'ervandew/supertab'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
+Bundle 'scrooloose/nerdtree'
+
+" languages
+Bundle 'AndrewRadev/vim-eco'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'fatih/vim-go'
+Bundle 'groenewege/vim-less'
+Bundle 'pangloss/vim-javascript'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'yaymukund/vim-rabl'
+Bundle 'tpope/vim-endwise'
+
+" frameworks
+Bundle 'tpope/vim-rails'
+Bundle 'burnettk/vim-angular'
+Bundle 'othree/html5.vim'
+Bundle 'quentindecock/vim-cucumber-align-pipes'
+Bundle 'vim-scripts/vim-terraform'
+Bundle 'rodjek/vim-puppet'
+
+" misc
+Bundle 'tpope/vim-unimpaired'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'nviennot/molokai'
-Bundle 'othree/html5.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'quentindecock/vim-cucumber-align-pipes'
-Bundle 'rking/ag.vim'
-Bundle 'rodjek/vim-puppet'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'sjl/gundo.vim'
-Bundle 'tomtom/quickfixsigns_vim'
-Bundle 'tmhedberg/matchit'
-Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/vim-terraform'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'yaymukund/vim-rabl'
+Bundle 'tomtom/quickfixsigns_vim'
 
 """""""""""""""""""""""""
 " Basic features
