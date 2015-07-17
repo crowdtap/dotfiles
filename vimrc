@@ -11,7 +11,7 @@ Bundle 'gmarik/vundle'
 " Vim Plugins
 """""""""""""""""""""""""
 
-" appearence
+" appearance
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'morhetz/gruvbox'
 Bundle 'nviennot/molokai'
