@@ -240,6 +240,9 @@ let g:miniBufExplSplitBelow=1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplVSplit = 20
 
+let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
+" This mutes warnings from rubcop for ruby 2.1.x that break syntastic
+let g:syntastic_ruby_rubocop_exec      = '~/rubocop-patch.sh'
 let g:syntastic_enable_signs=1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],

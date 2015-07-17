@@ -2,7 +2,7 @@
 # Installs our dotfiles
 #
 
-declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc ops)
+declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc ops rubocop.yml)
 
 if [ ! -d 'zprezto' ]; then
   echo "Installing zprezto..."
@@ -67,4 +67,11 @@ do
     ln -sf $cwd/$dotfile $HOME/.$dotfile
   fi
 done
+
+# XXX: This mutes warnings from rubcop for ruby 2.1.x that break syntastic
+RUBOCOP_PATCH="rubocop-patch.sh"
+if [ ! -h "$HOME/$RUBOCOP_PATCH" ]; then
+  echo "Creating Rubocop patch..."
+  ln -sf $cwd/$RUBOCOP_PATCH $HOME/$RUBOCOP_PATCH
+fi
 echo "Done"
