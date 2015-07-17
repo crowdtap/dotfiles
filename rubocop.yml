@@ -1067,7 +1067,7 @@ Style/SpaceInsideBlockBraces:
   EnforcedStyleForEmptyBraces: no_space
   # Space between { and |. Overrides EnforcedStyle if there is a conflict.
   SpaceBeforeBlockParameters: true
-  Enabled: true
+  Enabled: false
 
 Style/SpaceAroundBlockParameters:
   Description: 'Checks the spacing inside and after block parameters pipes.'
@@ -1162,7 +1162,7 @@ Style/StringLiteralsInInterpolation:
 Style/StructInheritance:
   Description: 'Checks for inheritance from Struct.new.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-extend-struct-new'
-  Enabled: true
+  Enabled: false
 
 Style/SymbolLiteral:
   Description: 'Use plain symbols instead of string symbols when possible.'
@@ -1347,7 +1347,7 @@ Metrics/ModuleLength:
   Description: 'Avoid modules longer than 100 lines of code.'
   CountComments: false  # count full line comments?
   Max: 100
-  Enabled: true
+  Enabled: false
 
 Metrics/CyclomaticComplexity:
   Description: >-
@@ -1355,7 +1355,7 @@ Metrics/CyclomaticComplexity:
                  of test cases needed to validate a method.
   # Avoid complex methods.
   Max: 6
-  Enabled: true
+  Enabled: false
 
 Metrics/LineLength:
   Description: 'Limit lines to 120 characters.'
@@ -1374,7 +1374,7 @@ Metrics/MethodLength:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#short-methods'
   CountComments: false  # count full line comments?
   Max: 10
-  Enabled: true
+  Enabled: false
 
 Metrics/ParameterLists:
   Description: 'Avoid parameter lists longer than three or four parameters.'
@@ -1389,7 +1389,7 @@ Metrics/PerceivedComplexity:
                  A complexity metric geared towards measuring complexity for a
                  human reader.
   Max: 7
-  Enabled: true
+  Enabled: false
 
 #################### Lint ################################
 ### Warnings
