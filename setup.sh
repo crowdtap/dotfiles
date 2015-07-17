@@ -2,7 +2,7 @@
 # Installs our dotfiles
 #
 
-declare -a dotfiles=(ackrc tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc ops)
+declare -a dotfiles=(ackrc tmux tmux.conf vim vimrc gvimrc gemrc irb irbrc.d jshintrc rdebugrc rvmrc zprezto zlogin zlogout zpreztorc zprofile zshenv zshrc zsh-themes gitconfig-ct editrc ops)
 
 if [ ! -d 'zprezto' ]; then
   echo "Installing zprezto..."
@@ -31,6 +31,29 @@ else
   for plugin in "${plugins[@]}"
   do
     dest=`sed -E "s/vim\/bundle\/(.+)/\1/g" <<< $plugin`
+    echo "  $dest"
+    cd $plugin && git pull -q origin master
+    cd - > /dev/null
+  done
+fi
+
+if [ ! -d 'tmux/plugins/tpm' ]; then
+  echo "Installing Tmux plugins..."
+  # pull the repos from the tmux.conf file
+  plugins=( `grep "@plugin" tmux.conf | sed -E "s/set -g @plugin '(.+)'/\1/g"` )
+  for plugin in "${plugins[@]}"
+  do
+    echo "  $plugin"
+    # dest is the second half of the plugin name
+    dest=`sed -E "s/.+\/(.+)/\1/g" <<< $plugin`
+    git clone -q --depth 1 https://github.com/$plugin tmux/plugins/$dest
+  done
+else
+  echo "Updating tmux plugins..."
+  plugins=( `find tmux/plugins -maxdepth 1 | tail -n +2` )
+  for plugin in "${plugins[@]}"
+  do
+    dest=`sed -E "s/tmux\/plugins\/(.+)/\1/g" <<< $plugin`
     echo "  $dest"
     cd $plugin && git pull -q origin master
     cd - > /dev/null
