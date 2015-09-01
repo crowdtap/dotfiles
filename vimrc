@@ -24,6 +24,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tmhedberg/matchit'
+Bundle 'terryma/vim-multiple-cursors'
 
 " navigation
 Bundle 'kien/ctrlp.vim'
@@ -32,6 +33,7 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/screen'
 
 " languages
 Bundle 'AndrewRadev/vim-eco'
@@ -52,6 +54,8 @@ Bundle 'othree/html5.vim'
 Bundle 'quentindecock/vim-cucumber-align-pipes'
 Bundle 'vim-scripts/vim-terraform'
 Bundle 'rodjek/vim-puppet'
+Bundle 'jalvesaq/VimCom'
+Bundle 'jcfaria/Vim-R-plugin'
 
 " misc
 Bundle 'tpope/vim-unimpaired'
@@ -238,7 +242,7 @@ map <silent> <Leader>gd :Gdiff<CR>
 map <silent> <Leader>gb :Gblame<CR>
 map <silent> <Leader>gg :Gbrowse<CR>
 
-nnoremap <Leader>a :Ack 
+nnoremap <Leader>a :Ack
 
 " Put a space around comment markers
 let g:NERDSpaceDelims = 1
@@ -286,6 +290,9 @@ nmap <leader>gi :Gist
 let g:gist_post_private = 1
 let g:gist_open_browser_after_post = 1
 
+let g:multi_cursor_exit_from_insert_mode=0
+
+command! W  write
 """""""""""""""""""""""""
 " Cscope
 """""""""""""""""""""""""
