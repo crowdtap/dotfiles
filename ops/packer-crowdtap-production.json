@@ -1,0 +1,46 @@
+{
+  "variables": {
+    "app_name": null,
+    "app_stack": null,
+    "instance_size": null,
+    "base_ami": "ami-abf33fc0",
+    "deploy_branch": ""
+  },
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "source_ami": "{{user `base_ami`}}",
+      "ssh_username": "ubuntu",
+      "instance_type": "{{user `instance_size`}}",
+      "ami_block_device_mappings": [
+        {
+          "device_name": "/dev/sda1",
+          "volume_type": "gp2",
+          "volume_size": 10
+        }
+      ],
+      "region": "us-east-1",
+      "vpc_id": "vpc-87cb79ec",
+      "subnet_id": "subnet-ec0c41c4",
+      "iam_instance_profile": "production",
+      "associate_public_ip_address": "true",
+
+      "ami_name": "{{user `app_name`}}-{{user `app_stack`}}-{{isotime | clean_ami_name }}"
+    }
+  ],
+
+  "provisioners": [
+    {
+      "type": "chef-solo",
+      "cookbook_paths": ["berks-cookbooks"],
+      "run_list": ["recipe[{{user `app_name`}}::{{user `app_stack`}}]"],
+      "skip_install": true
+    },
+    {
+      "type": "shell",
+      "inline": ["BLOCKING=1 /usr/local/bin/deploy {{user `app_name`}} {{user `deploy_branch`}}",
+                 "echo 'Waiting for logs to be created...'",
+                 "sleep 5"]
+    }
+  ]
+}
