@@ -238,7 +238,7 @@ map <silent> <Leader>gd :Gdiff<CR>
 map <silent> <Leader>gb :Gblame<CR>
 map <silent> <Leader>gg :Gbrowse<CR>
 
-nnoremap <Leader>a :Ack 
+nnoremap <Leader>a :Ack
 
 " Put a space around comment markers
 let g:NERDSpaceDelims = 1
@@ -284,7 +284,7 @@ nnoremap <Leader>t :TagbarOpen fjc<CR>
 
 nmap <leader>gi :Gist
 let g:gist_post_private = 1
-let g:gist_open_browser_after_post = 1
+let g:gist_open_browser_after_post = 0
 
 """""""""""""""""""""""""
 " Cscope
