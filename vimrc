@@ -55,7 +55,7 @@ Bundle 'rodjek/vim-puppet'
 
 " misc
 Bundle 'tpope/vim-unimpaired'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'scrooloose/syntastic'
@@ -262,7 +262,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 let g:quickfixsigns_classes=['qfl', 'vcsdiff', 'breakpoints']
 
-let g:Powerline_symbols = 'unicode'
+let g:airline_theme = 'hybridline'
 set laststatus=2
 
 let g:ctrlp_map = '<Leader>.'
