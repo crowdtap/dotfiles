@@ -5,6 +5,7 @@ custom.vim
 *.sw[nomp]
 .*DS_Store
 tmux/plugins/*
+tmux/ressurrect/*
 vim/bundle/*
 vim/viminfo
 vim/yankring*

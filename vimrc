@@ -284,7 +284,7 @@ nnoremap <Leader>t :TagbarOpen fjc<CR>
 
 nmap <leader>gi :Gist
 let g:gist_post_private = 1
-let g:gist_open_browser_after_post = 0
+let g:gist_open_browser_after_post = 1
 
 """""""""""""""""""""""""
 " Cscope

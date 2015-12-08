@@ -1,0 +1,5 @@
+pane	0	0	:zsh	1	:*	0	:/Users/iure/src/dotfiles	0	vim	:vim tmux.conf
+pane	0	0	:zsh	1	:*	1	:/Users/iure/src/dotfiles	0	zsh	:
+pane	0	0	:zsh	1	:*	2	:/Users/iure/src/dotfiles	1	zsh	:
+window	0	0	1	:*	babe,238x55,0,0{119x55,0,0,0,118x55,120,0[118x27,120,0,1,118x27,120,28,2]}
+state	0	
