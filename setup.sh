@@ -10,7 +10,7 @@ if [ ! -d 'zprezto' ]; then
 else
   echo "Updating zprezto..."
   cd zprezto
-  git pull -q origin master && git submodule update --init --recursive -q
+  git fetch -q origin master && git reset -q --hard origin/master && git submodule update --init --recursive -q
   cd - > /dev/null
 fi
 
@@ -32,7 +32,7 @@ else
   do
     dest=`sed -E "s/vim\/bundle\/(.+)/\1/g" <<< $plugin`
     echo "  $dest"
-    cd $plugin && git pull -q origin master
+    cd $plugin && git fetch -q origin master && git reset -q --hard origin/master
     cd - > /dev/null
   done
 fi
@@ -55,7 +55,7 @@ else
   do
     dest=`sed -E "s/tmux\/plugins\/(.+)/\1/g" <<< $plugin`
     echo "  $dest"
-    cd $plugin && git pull -q origin master
+    cd $plugin && git fetch -q origin master && git reset -q --hard origin/master
     cd - > /dev/null
   done
 fi
