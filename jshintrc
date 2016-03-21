@@ -52,5 +52,8 @@
   "unused": true,
 
   // Enforce placing 'use strict' at the top function scope
-  "strict": true
+  "strict": true,
+  
+  // Make ES6 work
+  "esnext": true
 }
