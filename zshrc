@@ -30,3 +30,5 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zshrc-mine" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc-mine"
 fi
 # Customize to your needs...
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
