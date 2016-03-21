@@ -12,8 +12,6 @@ Bundle 'gmarik/vundle'
 """""""""""""""""""""""""
 
 " appearance
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'morhetz/gruvbox'
 Bundle 'nviennot/molokai'
 
 " editing
@@ -28,15 +26,12 @@ Bundle 'tmhedberg/matchit'
 " navigation
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'mileszs/ack.vim'
 Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdtree'
 
 " languages
 Bundle 'AndrewRadev/vim-eco'
 Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'fatih/vim-go'
 Bundle 'groenewege/vim-less'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
@@ -50,11 +45,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'burnettk/vim-angular'
 Bundle 'othree/html5.vim'
 Bundle 'quentindecock/vim-cucumber-align-pipes'
-Bundle 'vim-scripts/vim-terraform'
-Bundle 'rodjek/vim-puppet'
 
 " misc
-Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-airline/vim-airline'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
@@ -118,9 +110,7 @@ set formatoptions-=t formatoptions+=croql
 "   n... : where to save the viminfo files
 set viminfo=%100,'100,/100,h,\"500,:1000,n~/.vim/viminfo
 
-" ctags: recurse up to home to find tags. See
-" http://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks
-" for an explanation and other ctags tips/tricks
+" ctags: recurse up to home to find tags.
 set tags+=tags;$HOME
 
 " Undo
@@ -238,7 +228,7 @@ map <silent> <Leader>gd :Gdiff<CR>
 map <silent> <Leader>gb :Gblame<CR>
 map <silent> <Leader>gg :Gbrowse<CR>
 
-nnoremap <Leader>a :Ack
+nnoremap <Leader>a :Ag
 
 " Put a space around comment markers
 let g:NERDSpaceDelims = 1
@@ -247,15 +237,7 @@ nnoremap <C-y> :YRShow<cr>
 let g:yankring_history_dir = '$HOME/.vim'
 let g:yankring_manual_clipboard_check = 0
 
-map <Leader>l :MiniBufExplorer<cr>
-let g:miniBufExplorerMoreThanOne = 10000
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplSplitBelow=1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplVSplit = 20
-
-let g:syntastic_enable_signs=1
+let g:syntastic_enable_signs = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['c', 'scss', 'html', 'scala'] }
@@ -278,8 +260,6 @@ noremap \, :Tabularize /,\zs/l0l1<CR>
 noremap \{ :Tabularize /{<CR>
 noremap \\| :Tabularize /\|<CR>
 noremap \& :Tabularize /\(&\\|\\\\\)<CR>
-
-nnoremap <Leader>t :TagbarOpen fjc<CR>
 
 nmap <leader>gi :Gist
 let g:gist_post_private = 1
