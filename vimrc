@@ -1,58 +1,70 @@
-" This needs to be off for Vundle, turned back on after
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle - required!
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 """""""""""""""""""""""""
 " Vim Plugins
 """""""""""""""""""""""""
 
 " appearance
-Bundle 'nviennot/molokai'
+Plugin 'nviennot/molokai'
 
 " editing
-Bundle 'godlygeek/tabular'
-Bundle 'kana/vim-textobj-user'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'sjl/gundo.vim'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tmhedberg/matchit'
+Plugin 'godlygeek/tabular'
+Plugin 'kana/vim-textobj-user'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'sjl/gundo.vim'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tmhedberg/matchit'
 
 " navigation
-Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
 
 " languages
-Bundle 'AndrewRadev/vim-eco'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'pangloss/vim-javascript'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'yaymukund/vim-rabl'
-Bundle 'tpope/vim-endwise'
+Plugin 'AndrewRadev/vim-eco'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'yaymukund/vim-rabl'
+Plugin 'tpope/vim-endwise'
 
 " frameworks
-Bundle 'tpope/vim-rails'
-Bundle 'burnettk/vim-angular'
-Bundle 'othree/html5.vim'
-Bundle 'quentindecock/vim-cucumber-align-pipes'
+Plugin 'tpope/vim-rails'
+Plugin 'burnettk/vim-angular'
+Plugin 'othree/html5.vim'
+Plugin 'quentindecock/vim-cucumber-align-pipes'
 
 " misc
-Bundle 'vim-airline/vim-airline'
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tomtom/quickfixsigns_vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tomtom/quickfixsigns_vim'
+
+" Plugins you want just for yourself go here
+if filereadable(expand("~/.custom.vim-plugins"))
+  source ~/.custom.vim-plugins
+endif
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 """""""""""""""""""""""""
 " Basic features
@@ -71,7 +83,6 @@ endif
 colorscheme molokai
 
 " Misc
-filetype plugin indent on       " Do filetype detection and load custom file plugins and indent files
 set hidden                      " Don't abandon buffers moved to the background
 set wildmenu                    " Enhanced completion hints in command line
 set wildmode=list:longest,full  " Complete longest common match and show possible matches and wildmenu
@@ -286,9 +297,7 @@ if has("cscope")
   set cscopeverbose
 end
 
-"
 " Source custom vim from ~/.custom.vim
-"
 if filereadable(expand("~/.custom.vim"))
   source ~/.custom.vim
 endif

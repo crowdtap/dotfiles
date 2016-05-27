@@ -14,10 +14,10 @@ else
   cd - > /dev/null
 fi
 
-if [ ! -d 'vim/bundle/vundle' ]; then
+if [ ! -d 'vim/bundle/Vundle.vim' ]; then
   echo "Installing VIM plugins..."
   # pull the repos from the vimrc file
-  plugins=( `grep "Bundle" vimrc | sed -E "s/Bundle '(.+)'/\1/g"` )
+  plugins=( `grep "Plugin" vimrc | sed -E "s/Plugin '(.+)'/\1/g"` )
   for plugin in "${plugins[@]}"
   do
     echo "  $plugin"
