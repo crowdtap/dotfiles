@@ -1,19 +1,77 @@
 # Common configuration
 AllCops:
   Include:
-    - Rakefile
-    - config.ru
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
   Exclude:
-    - db/**
-    - config/**
-    - script/**
-    - vendor/**
+    - 'db/**'
+    - 'config/**'
+    - 'script/**'
+    - 'vendor/**'
   DisabledByDefault: true
-  DisplayCopNames: true
-  Rails:
-    Enabled: true
 
 # Rules
-# Whitespace
+# Whitespace / Indentation
+Style/AlignParameters:
+  EnforcedStyle: with_first_parameter
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/CaseIndentation:
+  IndentWhenRelativeTo: case
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/IndentationWidth:
+  Width: 2
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/Tab:
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+# Whitespace / Inline
+Style/SpaceAroundBlockParameters:
+  EnforcedStyleInsidePipes: no_space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceAroundOperators:
+  AllowForAlignment: true
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceBeforeBlockBraces:
+  EnforcedStyle: space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideBlockBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  SpaceBeforeBlockParameters: true
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideBrackets:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideParens:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/TrailingBlankLines:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
 Style/TrailingWhitespace:
   StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+# Whitespace / Newlines
+Style/MultilineBlockLayout:
+  StyleGuide: "https://github.com/crowdtap/ruby#newlines"
