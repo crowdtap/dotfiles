@@ -13,6 +13,12 @@ AllCops:
 
 # Rules
 # Whitespace / Indentation
+Style/AlignArray:
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/AlignHash:
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
 Style/AlignParameters:
   EnforcedStyle: with_first_parameter
   StyleGuide: "https://github.com/crowdtap/ruby#indentation"
@@ -100,3 +106,51 @@ Style/MethodCallParentheses:
 
 Style/SpaceAfterMethodName:
   StyleGuide: "https://github.com/crowdtap/ruby#method-calls"
+
+# Conditional Expressions / Keywords
+Style/AndOr:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/IfUnlessModifier:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/IfUnlessModifierOfIfUnless:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/MultilineIfThen:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/MultilineTernaryOperator:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/ParenthesesAroundCondition:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/UnlessElse:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+# Conditional Expressions / Ternary Operator
+Style/MultilineTernaryOperator:
+  StyleGuide: "https://github.com/crowdtap/ruby#ternary-operator"
+
+Style/OneLineConditional:
+  StyleGuide: "https://github.com/crowdtap/ruby#ternary-operator"
+
+# Syntax
+Lint/UnusedBlockArgument:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Lint/UnusedMethodArgument:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/BlockDelimiters:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/For:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/RedundantReturn:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/RedundantSelf:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
