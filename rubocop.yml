@@ -1,0 +1,19 @@
+# Common configuration
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - db/**
+    - config/**
+    - script/**
+    - vendor/**
+  DisabledByDefault: true
+  DisplayCopNames: true
+  Rails:
+    Enabled: true
+
+# Rules
+# Whitespace
+Style/TrailingWhitespace:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
