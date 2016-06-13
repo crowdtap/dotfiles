@@ -33,6 +33,10 @@ Style/Tab:
   StyleGuide: "https://github.com/crowdtap/ruby#indentation"
 
 # Whitespace / Inline
+Style/DotPosition:
+  EnforcedStyle: leading
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
 Style/SpaceAroundBlockParameters:
   EnforcedStyleInsidePipes: no_space
   StyleGuide: "https://github.com/crowdtap/ruby#inline"
@@ -75,3 +79,24 @@ Style/TrailingWhitespace:
 # Whitespace / Newlines
 Style/MultilineBlockLayout:
   StyleGuide: "https://github.com/crowdtap/ruby#newlines"
+
+Style/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+  StyleGuide: "https://github.com/crowdtap/ruby#newlines"
+
+# Line length
+Metrics/LineLength:
+  Max: 100
+  StyleGuide: "https://github.com/crowdtap/ruby#line-length"
+
+# Methods / Definitions
+Style/MethodDefParentheses:
+  EnforcedStyle: require_parentheses
+  StyleGuide: "https://github.com/crowdtap/ruby#method-definitions"
+
+# Methods / Calls
+Style/MethodCallParentheses:
+  StyleGuide: "https://github.com/crowdtap/ruby#method-calls"
+
+Style/SpaceAfterMethodName:
+  StyleGuide: "https://github.com/crowdtap/ruby#method-calls"
