@@ -5,10 +5,10 @@ AllCops:
     - '**/Gemfile'
     - '**/Rakefile'
   Exclude:
-    - 'db/**'
-    - 'config/**'
-    - 'script/**'
-    - 'vendor/**'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'vendor/**/*'
   DisabledByDefault: true
 
 # Styles
@@ -92,7 +92,7 @@ Style/EmptyLineBetweenDefs:
 
 # Line length
 Metrics/LineLength:
-  Max: 100
+  Max: 150
   StyleGuide: "https://github.com/crowdtap/ruby#line-length"
 
 # Methods / Definitions
