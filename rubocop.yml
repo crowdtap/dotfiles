@@ -1,0 +1,471 @@
+# Common configuration
+AllCops:
+  Include:
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'vendor/**/*'
+  DisabledByDefault: true
+
+# Styles
+# Whitespace / Indentation
+Style/AlignArray:
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/AlignHash:
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/AlignParameters:
+  EnforcedStyle: with_first_parameter
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/CaseIndentation:
+  IndentWhenRelativeTo: case
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/IndentationWidth:
+  Width: 2
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+Style/Tab:
+  StyleGuide: "https://github.com/crowdtap/ruby#indentation"
+
+# Whitespace / Inline
+Style/DotPosition:
+  EnforcedStyle: leading
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceAroundBlockParameters:
+  EnforcedStyleInsidePipes: no_space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceAroundOperators:
+  AllowForAlignment: true
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceBeforeBlockBraces:
+  EnforcedStyle: space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideBlockBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  SpaceBeforeBlockParameters: true
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideBrackets:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/SpaceInsideParens:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/TrailingBlankLines:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+Style/TrailingWhitespace:
+  StyleGuide: "https://github.com/crowdtap/ruby#inline"
+
+# Whitespace / Newlines
+Style/MultilineBlockLayout:
+  StyleGuide: "https://github.com/crowdtap/ruby#newlines"
+
+Style/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+  StyleGuide: "https://github.com/crowdtap/ruby#newlines"
+
+# Line length
+Metrics/LineLength:
+  Max: 150
+  StyleGuide: "https://github.com/crowdtap/ruby#line-length"
+
+# Methods / Definitions
+Style/MethodDefParentheses:
+  EnforcedStyle: require_parentheses
+  StyleGuide: "https://github.com/crowdtap/ruby#method-definitions"
+
+# Methods / Calls
+Style/MethodCallParentheses:
+  StyleGuide: "https://github.com/crowdtap/ruby#method-calls"
+
+Style/SpaceAfterMethodName:
+  StyleGuide: "https://github.com/crowdtap/ruby#method-calls"
+
+# Conditional Expressions / Keywords
+Style/AndOr:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/IfUnlessModifier:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/MultilineIfThen:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/MultilineTernaryOperator:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/Not:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/ParenthesesAroundCondition:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+Style/UnlessElse:
+  StyleGuide: "https://github.com/crowdtap/ruby#conditional-keywords"
+
+# Conditional Expressions / Ternary Operator
+Style/MultilineTernaryOperator:
+  StyleGuide: "https://github.com/crowdtap/ruby#ternary-operator"
+
+Style/OneLineConditional:
+  StyleGuide: "https://github.com/crowdtap/ruby#ternary-operator"
+
+# Syntax
+Lint/UnusedBlockArgument:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Lint/UnusedMethodArgument:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/BlockDelimiters:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/For:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/RedundantReturn:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+Style/RedundantSelf:
+  StyleGuide: "https://github.com/crowdtap/ruby#syntax"
+
+# Naming
+Lint/UnderscorePrefixedVariableName:
+  StyleGuide: "https://github.com/crowdtap/ruby#naming"
+
+Style/ClassAndModuleCamelCase:
+  StyleGuide: "https://github.com/crowdtap/ruby#naming"
+
+Style/ConstantName:
+  StyleGuide: "https://github.com/crowdtap/ruby#naming"
+
+Style/MethodName:
+  EnforcedStyle: snake_case
+  StyleGuide: "https://github.com/crowdtap/ruby#naming"
+
+Style/VariableName:
+  EnforcedStyle: snake_case
+  StyleGuide: "https://github.com/crowdtap/ruby#naming"
+
+# Classes
+Style/AccessModifierIndentation:
+  EnforcedStyle: indent
+  StyleGuide: "https://github.com/crowdtap/ruby#naming"
+
+Style/ClassVars:
+  StyleGuide: "https://github.com/crowdtap/ruby#classes"
+
+Style/IndentationConsistency:
+  StyleGuide: "https://github.com/crowdtap/ruby#classes"
+
+# Exceptions
+Lint/HandleExceptions:
+  StyleGuide: "https://github.com/crowdtap/ruby#exceptions"
+
+Lint/RescueException:
+  StyleGuide: "https://github.com/crowdtap/ruby#exceptions"
+
+# Collections
+Style/CollectionMethods:
+  PreferredMethods:
+    collect!: 'map!'
+    collect: 'map'
+    count: 'size'
+    find: 'detect'
+    find_all: 'select'
+    inject: 'reduce'
+    length: 'size'
+  StyleGuide: "https://github.com/crowdtap/ruby#collections"
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+  StyleGuide: "https://github.com/crowdtap/ruby#collections"
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+  StyleGuide: "https://github.com/crowdtap/ruby#collections"
+
+Style/MultilineHashBraceLayout:
+  StyleGuide: "https://github.com/crowdtap/ruby#collections"
+
+# Rails
+Rails/ActionFilter:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/Date:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/Delegate:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/FindBy:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/FindEach:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/HasAndBelongsToMany:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/Output:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/PluralizationGrammar:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/ReadWriteAttribute:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/ScopeArgs:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/TimeZone:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+Rails/Validation:
+  StyleGuide: "https://github.com/crowdtap/ruby#rails"
+
+# Additional Metrics
+Metrics/BlockNesting:
+  Enabled: true
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+
+# Additional Lint
+Lint/AmbiguousOperator:
+  Enabled: true
+
+Lint/AmbiguousRegexpLiteral:
+  Enabled: true
+
+Lint/AssignmentInCondition:
+  Enabled: true
+
+Lint/BlockAlignment:
+  Enabled: true
+
+Lint/CircularArgumentReference:
+  Enabled: true
+
+Lint/ConditionPosition:
+  Enabled: true
+
+Lint/Debugger:
+  Enabled: true
+
+Lint/DefEndAlignment:
+  Enabled: true
+
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+Lint/DuplicateMethods:
+  Enabled: true
+
+Lint/DuplicatedKey:
+  Enabled: true
+
+Lint/EachWithObjectArgument:
+  Enabled: true
+
+Lint/ElseLayout:
+  Enabled: true
+
+Lint/EmptyEnsure:
+  Enabled: true
+
+Lint/EmptyInterpolation:
+  Enabled: true
+
+Lint/EndAlignment:
+  Enabled: true
+
+Lint/EndInMethod:
+  Enabled: true
+
+Lint/EnsureReturn:
+  Enabled: true
+
+Lint/Eval:
+  Enabled: true
+
+Lint/FloatOutOfRange:
+  Enabled: true
+
+Lint/FormatParameterMismatch:
+  Enabled: true
+
+Lint/HandleExceptions:
+  Enabled: true
+
+Lint/ImplicitStringConcatenation:
+  Enabled: true
+
+Lint/IneffectiveAccessModifier:
+  Enabled: true
+
+Lint/InvalidCharacterLiteral:
+  Enabled: true
+
+Lint/LiteralInCondition:
+  Enabled: true
+
+Lint/LiteralInInterpolation:
+  Enabled: true
+
+Lint/Loop:
+  Enabled: true
+
+Lint/NestedMethodDefinition:
+  Enabled: true
+
+Lint/NextWithoutAccumulator:
+  Enabled: true
+
+Lint/NonLocalExitFromIterator:
+  Enabled: true
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: true
+
+Lint/RandOne:
+  Enabled: true
+
+Lint/RequireParentheses:
+  Enabled: true
+
+Lint/RescueException:
+  Enabled: true
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+
+Lint/StringConversionInInterpolation:
+  Enabled: true
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: true
+
+Lint/UnneededDisable:
+  Enabled: true
+
+Lint/UnusedBlockArgument:
+  Enabled: true
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+
+Lint/UnreachableCode:
+  Enabled: true
+
+Lint/UselessAccessModifier:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UselessComparison:
+  Enabled: true
+
+Lint/UselessElseWithoutRescue:
+  Enabled: true
+
+Lint/UselessSetterCall:
+  Enabled: true
+
+Lint/Void:
+  Enabled: true
+
+# Additional Performance
+Performance/Casecmp:
+  Enabled: true
+
+Performance/CaseWhenSplat:
+  Enabled: true
+
+Performance/Count:
+  Enabled: true
+
+Performance/Detect:
+  Enabled: true
+
+Performance/DoubleStartEndWith:
+  Enabled: true
+
+Performance/EndWith:
+  Enabled: true
+
+Performance/FixedSize:
+  Enabled: true
+
+Performance/FlatMap:
+  Enabled: true
+
+Performance/HashEachMethods:
+  Enabled: true
+
+Performance/LstripRstrip:
+  Enabled: true
+
+Performance/RangeInclude:
+  Enabled: true
+
+Performance/RedundantBlockCall:
+  Enabled: true
+
+Performance/RedundantMatch:
+  Enabled: true
+
+Performance/RedundantMerge:
+  Enabled: true
+
+Performance/RedundantSortBy:
+  Enabled: true
+
+Performance/ReverseEach:
+  Enabled: true
+
+Performance/Sample:
+  Enabled: true
+
+Performance/Size:
+  Enabled: true
+
+Performance/StartWith:
+  Enabled: true
+
+Performance/StringReplacement:
+  Enabled: true
+
+Performance/TimesMap:
+  Enabled: true

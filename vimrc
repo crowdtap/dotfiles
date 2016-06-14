@@ -252,6 +252,7 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['c', 'scss', 'html', 'scala'] }
+let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_javascript_checkers = ['jshint']
 
 let g:quickfixsigns_classes=['qfl', 'vcsdiff', 'breakpoints']
