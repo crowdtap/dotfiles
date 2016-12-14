@@ -254,6 +254,8 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['c', 'scss', 'html', 'scala'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_css_checkers = ['stylelint']
+let g:syntastic_less_checkers = ['stylelint']
 
 let g:quickfixsigns_classes=['qfl', 'vcsdiff', 'breakpoints']
 
