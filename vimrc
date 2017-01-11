@@ -253,6 +253,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['c', 'scss', 'html', 'scala'] }
 let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_ruby_rubocop_exec = '/opt/boxen/rbenv/shims/rubocop'
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_css_checkers = ['stylelint']
 let g:syntastic_less_checkers = ['stylelint']
